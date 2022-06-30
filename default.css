@@ -66,7 +66,7 @@ h6 { font-size: 16px;}
 
 .s2{
 	background-color: var(--secondaryColor);
-	border-bottom:1px solid var(--borderColor);
+	
 	overflow:auto;
 }
 
@@ -471,7 +471,7 @@ h6 { font-size: 16px;}
 
 
 .container {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
