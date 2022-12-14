@@ -1,13 +1,11 @@
 <h1 align="center">Hi 👋, I'm Janarthanan</h1>
 <h3 align="center">A Passionate Full Stack Developer and Programmer from India ,</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=blacklovertech" alt="blacklovertech" /></a> </p>
-
 - 🔭 I’m currently working on [Property Management System](http://skltheniproperty.in/wordpress/)
 
 - 🌱 I’m currently learning **React Js**
 
-- 📝 I regularly write articles on [thejj.in/retrotech/blog](thejj.in/retrotech/blog)
+- 📝 I regularly write articles on [https://blacklovertech.blogspot.com/](https://blacklovertech.blogspot.com/)
 
 - 💬 Ask me about **PHP , JSP , ASP , Project Development**
 
