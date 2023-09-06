@@ -194,7 +194,119 @@
 ###
 
 <br clear="both">
+# Web Development Packages
 
-<img src="https://raw.githubusercontent.com/blacklovertech/blacklovertech/main/snake.svg" alt="Snake animation" />
+1. **Student Project Package - ₹5,000 to ₹10,000**
+   - For college students working on web development projects.
+   - Custom pricing based on project complexity and scope.
+   - Access to project guidance and support.
+   - Option to receive a presentation (PPT) or report for project demonstration.
+
+2. **Small Business Package - ₹15,000 to ₹25,000**
+   - Custom website development for small businesses and startups.
+   - Technologies: WordPress, Laravel, Flask, etc.
+   - Hosting, domain, and basic CDN setup included.
+   - Responsive design for mobile and desktop.
+   - SEO optimization.
+   - Limited post-launch support.
+
+3. **E-commerce Package - ₹30,000 to ₹50,000**
+   - E-commerce website development for online businesses.
+   - Platforms: WooCommerce, Magento, etc.
+   - Advanced features: product catalog, shopping cart, payment gateway.
+   - Hosting, domain, and SSL certificate included.
+   - Ongoing support for maintenance and updates.
+
+4. **Cloud-Based Package - Custom Pricing**
+   - Cloud infrastructure setup and management.
+   - Deployment on AWS, Azure, Google Cloud, etc.
+   - Scalable architecture.
+   - Integration with CDN for content delivery.
+   - Continuous monitoring and server maintenance.
+
+5. **Advanced Web Development Package - Custom Pricing**
+   - Tailored for complex projects.
+   - Technologies: Laravel, Java, PHP, Python, etc.
+   - Custom web applications, APIs, or enterprise solutions.
+   - Cloud hosting, VPS servers, or dedicated server setups.
+   - Security focus with penetration testing and audits.
+   - High-performance optimization and CDN integration.
+   - Ongoing maintenance, updates, and support.
+
+6. **Website Takeover and Revamp - Custom Pricing**
+   - For clients with existing websites seeking improvements.
+   - Comprehensive website evaluation and redesign.
+   - Transition and takeover of hosting and domain if required.
+   - Ongoing maintenance and support post-revamp.
+
+# Custom Pricing Option for Students
+- Exclusive pricing for college students working on mini or final year web development projects.
+- Custom rates based on project complexity.
+- Access to project guidance and support.
+- Opportunity to receive a presentation (PPT) or report for project demonstration.
+
+# Maintenance Packages
+
+7. **Basic Maintenance Package - ₹1,500 per month**
+   - Monthly website backups.
+   - Plugin and theme updates.
+   - Security checks and vulnerability scans.
+   - Uptime monitoring.
+   - Minor content updates and bug fixes.
+   - Priority email support.
+
+8. **Standard Maintenance Package - ₹2,500 per month**
+   - All services from the Basic package.
+   - Weekly backups.
+   - Proactive monitoring.
+   - Performance optimization.
+   - Monthly analytics report.
+   - Up to 2 hours of content updates or additional support per month.
+
+9. **Premium Maintenance Package - ₹4,500 per month**
+   - All services from the Standard package.
+   - Daily backups and disaster recovery.
+   - Advanced security measures.
+   - 24/7 uptime monitoring.
+   - Priority support.
+   - Up to 5 hours of content updates, design changes, or additional support per month.
+   - Quarterly website audit and optimization recommendations.
+
+10. **Deluxe Maintenance Package - ₹3,500 per month**
+    - All services from the Standard package.
+    - Daily backups and disaster recovery.
+    - Advanced security measures.
+    - 24/7 uptime monitoring.
+    - Priority support.
+    - Up to 3 hours of content updates or additional support per month.
+    - Quarterly website audit and optimization recommendations.
+
+11. **Pro Maintenance Package - ₹5,500 per month**
+    - All services from the Deluxe package.
+    - Enhanced security measures.
+    - Real-time website performance monitoring and optimization.
+    - Up to 10 hours of content updates or additional support per month.
+    - Monthly detailed analytics reports and strategy consultation.
+    - Customized disaster recovery and backup solutions.
+
+# Add-On Services
+- **Vulnerability Check and Fix - ₹X,XXX per month**
+   - Regular vulnerability assessments and fixes to protect your website.
+   
+- **Web Monitoring and Reporting - ₹X,XXX per month**
+   - Real-time monitoring of your website's performance, with monthly reports.
+
+- **Dataset Creation for Students - Pricing Varies**
+   - Creation of datasets for student projects and research purposes.
+
+- **Code Debugging and Analysis - ₹X,XXX per hour**
+   - In-depth debugging and code analysis to identify and fix issues.
+
+- **Code Review and Testing - ₹X,XXX per hour**
+   - Comprehensive code review and testing by experienced developers.
+
+These packages and add-ons offer a wide range of web development services, ensuring that clients receive tailored solutions for their needs and budgets.
+
+#<img src="https://raw.githubusercontent.com/blacklovertech/blacklovertech/main/snake.svg" alt="Snake animation" />
 
 ###
