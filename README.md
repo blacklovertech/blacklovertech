@@ -24,11 +24,17 @@ I'm a ℙ𝕣𝕠𝕘𝕣𝕒𝕞𝕞𝕖𝕣 {*-*} Mᴀᴅᴜʀᴀɪ , TN 59</h
 ------------
 
 <div align="left">
-  <a href="http://mailto:blacklovertech66@gmail.com/" target="_blank">
+  <a href="mailto:blacklovertech66@gmail.com/" target="_blank">
   <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
     </a>
   <a href="http://codepen.io/blacklovertech" target="_blank">
   <img src="https://img.shields.io/static/v1?message=Codepen&logo=codepen&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="codepen logo"  />
+    </a>
+  <a href="http://codepen.io/blacklovertech" target="_blank">
+  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="35" alt="codepen logo"  />
+    </a>
+  <a href="http://codepen.io/blacklovertech" target="_blank">
+  <img src="https://img.shields.io/v1?message=Instagram&logo=codepen&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="codepen logo"  />
     </a>
 </div>
 
