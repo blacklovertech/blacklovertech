@@ -34,7 +34,7 @@ I'm a ℙ𝕣𝕠𝕘𝕣𝕒𝕞𝕞𝕖𝕣 {*-*} Mᴀᴅᴜʀᴀɪ , TN 59</h
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="35" alt="codepen logo"  />
     </a>
   <a href="http://codepen.io/blacklovertech" target="_blank">
-  <img src="https://img.shields.io/v1?message=Instagram&logo=codepen&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="codepen logo"  />
+  <img src="https://img.shields.io/v1?message=Instagram-E4405F&logo=codepen&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="codepen logo"  />
     </a>
 </div>
 
