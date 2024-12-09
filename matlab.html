@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATLAB Topics and Source Code</title>
+    <title>MATLAB Source Codes</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        code, pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; display: block; margin: 10px 0; }
-        .output { color: green; font-weight: bold; margin-top: 10px; }
+        pre, code { background-color: #f9f9f9; border: 1px solid #ddd; padding: 10px; border-radius: 5px; }
+        .output { color: green; margin: 10px 0; }
         h1, h2 { color: #333; }
     </style>
 </head>
 <body>
-    <h1>MATLAB Topics and Source Code</h1>
+    <h1>MATLAB Source Codes</h1>
 
-    <!-- Cayley-Hamilton Theorem -->
     <h2>1. Cayley-Hamilton Theorem</h2>
     <pre>
 syms A s
 A = [7 2 -2; -6 -1 2; 6 2 -1];
-I = eye(3); % Identity matrix
+I = eye(3);
 charpoly(A, s) == 0
 
 verification = A^3 - 5*A^2 + 7*A - 3*I
@@ -29,9 +28,8 @@ inv_A = (1/3)*(A^2 - 5*A + 7*I)
 
 A_power4 = 5*A^3 - 7*A^2 + 3*A
     </pre>
-    <p class="output">Output: Verification = Zero matrix</p>
+    <p class="output">Output: Verifies the Cayley-Hamilton theorem, calculates inverse and power.</p>
 
-    <!-- Diagonalization of Matrices -->
     <h2>2. Diagonalization of Matrices</h2>
     <pre>
 syms s
@@ -42,10 +40,9 @@ disp(D);
 disp('Eigenvectors:');
 disp(N);
     </pre>
-    <p class="output">Output: Eigenvalues = [-2, 3, 6]; Eigenvectors matrix displayed.</p>
+    <p class="output">Output: Eigenvalues and eigenvectors.</p>
 
-    <!-- Linearly Independent/Dependent Vectors -->
-    <h2>3. Linearly Independent/Dependent Vectors</h2>
+    <h2>3. Linearly Independent / Dependent Vectors</h2>
     <pre>
 A = [1 2 1; 2 1 1; 1 0 2];
 if det(A) == 0
@@ -54,9 +51,8 @@ else
     disp('The vectors are independent');
 end
     </pre>
-    <p class="output">Output: The vectors are independent (Determinant ≠ 0).</p>
+    <p class="output">Output: Determination of dependency based on determinant.</p>
 
-    <!-- Rolle's Theorem -->
     <h2>4. Rolle's Theorem</h2>
     <pre>
 syms x
@@ -66,9 +62,8 @@ critical_points = solve(df == 0);
 disp('Critical Points:');
 disp(critical_points);
     </pre>
-    <p class="output">Output: Critical points within the interval displayed.</p>
+    <p class="output">Output: Critical points within interval (1, 3).</p>
 
-    <!-- Mean Value Theorem -->
     <h2>5. Mean Value Theorem</h2>
     <pre>
 syms x
@@ -79,9 +74,8 @@ c = solve(diff(f, x) == m, x);
 disp('Point c satisfying Mean Value Theorem:');
 disp(c);
     </pre>
-    <p class="output">Output: Point c within the interval displayed.</p>
+    <p class="output">Output: Value of c satisfying the theorem.</p>
 
-    <!-- Ordinary Differential Equations -->
     <h2>6. Ordinary Differential Equations</h2>
     <pre>
 syms x y(x)
@@ -89,9 +83,8 @@ ySol = dsolve(diff(y, x, 2) + 4*diff(y, x) - 5*y == 0);
 disp('Solution:');
 disp(ySol);
     </pre>
-    <p class="output">Output: General solution of the ODE displayed.</p>
+    <p class="output">Output: General solution of the ODE.</p>
 
-    <!-- Maxima and Minima -->
     <h2>7. Maxima and Minima</h2>
     <pre>
 syms x
@@ -108,45 +101,90 @@ for i = 1:length(critical_points)
     end
 end
     </pre>
-    <p class="output">Output: Critical points identified as minima or maxima.</p>
+    <p class="output">Output: Nature of critical points (minima/maxima).</p>
 
-    <!-- Beta and Gamma Functions -->
-    <h2>8. Beta and Gamma Functions</h2>
+    <h2>8. Limit of a Function</h2>
+    <pre>
+syms x y
+f = x^2 + y^2;
+limit_value = limit(limit(f, x, 1), y, 2);
+disp('Limit:');
+disp(limit_value);
+    </pre>
+    <p class="output">Output: Computed limit at given point.</p>
+
+    <h2>9. Derivatives of a Function</h2>
+    <pre>
+syms x y
+f = x^3 + y^3 - 3*x*y;
+dfx = diff(f, x);
+dfy = diff(f, y);
+disp('First Derivatives:');
+disp(dfx);
+disp(dfy);
+    </pre>
+    <p class="output">Output: Partial derivatives with respect to x and y.</p>
+
+    <h2>10. Beta and Gamma Functions</h2>
     <pre>
 syms x
 gammaValue = gamma(5);
+betaValue = beta(2, 3);
 disp('Gamma Function Value:');
 disp(gammaValue);
-betaValue = beta(2, 3);
 disp('Beta Function Value:');
 disp(betaValue);
     </pre>
     <p class="output">Output: Gamma = 24; Beta = 1/6.</p>
 
-    <!-- Integration -->
-    <h2>9. Integration</h2>
+    <h2>11. Computation of Indefinite Integral</h2>
     <pre>
 syms x
-f = x^2;
-I = int(f, x, 0, 2); % Definite integral
-disp('Integration Result:');
+f = sin(x);
+I = int(f, x);
+disp('Indefinite Integral:');
 disp(I);
     </pre>
-    <p class="output">Output: Integration result = 8/3.</p>
+    <p class="output">Output: Integration result.</p>
 
-    <!-- Gradient -->
-    <h2>10. Gradient</h2>
+    <h2>12. Computation of Definite Integral</h2>
+    <pre>
+syms x
+I = int(x^2, x, 0, 2);
+disp('Definite Integral:');
+disp(I);
+    </pre>
+    <p class="output">Output: Integral = 8/3.</p>
+
+    <h2>13. Double Integral (Rectangular Coordinates)</h2>
     <pre>
 syms x y
-f = x^2 + y^2;
+I = int(int(x^2 + y^2, y, 1, 2), x, 0, 1);
+disp('Double Integral:');
+disp(I);
+    </pre>
+    <p class="output">Output: Computed double integral.</p>
+
+    <h2>14. Triple Integral</h2>
+    <pre>
+syms x y z
+I = int(int(int(x^2 + y^2 + z^2, z, 0, 1), y, 0, 1), x, 0, 1);
+disp('Triple Integral:');
+disp(I);
+    </pre>
+    <p class="output">Output: Computed triple integral.</p>
+
+    <h2>15. Vector Calculus – Gradient</h2>
+    <pre>
+syms x y z
+f = x^2 + y^2 + z^2;
 grad_f = gradient(f);
 disp('Gradient:');
 disp(grad_f);
     </pre>
-    <p class="output">Output: Gradient = [2x; 2y].</p>
+    <p class="output">Output: Gradient vector.</p>
 
-    <!-- Divergence -->
-    <h2>11. Divergence</h2>
+    <h2>16. Vector Calculus – Divergence</h2>
     <pre>
 syms x y z
 F = [x^2*y, -2*x*z, 2*y*z];
@@ -154,10 +192,9 @@ div_F = divergence(F);
 disp('Divergence:');
 disp(div_F);
     </pre>
-    <p class="output">Output: Divergence = 2xy - 2z.</p>
+    <p class="output">Output: Divergence scalar.</p>
 
-    <!-- Curl -->
-    <h2>12. Curl</h2>
+    <h2>17. Vector Calculus – Curl</h2>
     <pre>
 syms x y z
 F = [x^2*y, -2*x*z, 2*y*z];
@@ -165,7 +202,22 @@ curl_F = curl(F);
 disp('Curl:');
 disp(curl_F);
     </pre>
-    <p class="output">Output: Curl = [2y - 2z; 0; -2x].</p>
+    <p class="output">Output: Curl vector.</p>
+
+    <h2>18. Analytic Functions</h2>
+    <pre>
+syms x y
+u = x^2 - y^2;
+v = 2*x*y;
+c1 = diff(u, x) - diff(v, y);
+c2 = diff(u, y) + diff(v, x);
+if c1 == 0 && c2 == 0
+    disp('Function is analytic');
+else
+    disp('Function is not analytic');
+end
+    </pre>
+    <p class="output">Output: Analyticity test result.</p>
 
 </body>
 </html>
