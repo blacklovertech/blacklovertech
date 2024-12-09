@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATLAB Topics and Source Code</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        code, pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; display: block; margin: 10px 0; }
+        .output { color: green; font-weight: bold; margin-top: 10px; }
+        h1, h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>MATLAB Topics and Source Code</h1>
+
+    <!-- Cayley-Hamilton Theorem -->
+    <h2>1. Cayley-Hamilton Theorem</h2>
+    <pre>
+syms A s
+A = [7 2 -2; -6 -1 2; 6 2 -1];
+I = eye(3); % Identity matrix
+charpoly(A, s) == 0
+
+verification = A^3 - 5*A^2 + 7*A - 3*I
+
+format rational
+inv_A = (1/3)*(A^2 - 5*A + 7*I)
+
+A_power4 = 5*A^3 - 7*A^2 + 3*A
+    </pre>
+    <p class="output">Output: Verification = Zero matrix</p>
+
+    <!-- Diagonalization of Matrices -->
+    <h2>2. Diagonalization of Matrices</h2>
+    <pre>
+syms s
+A = [1 1 3; 1 5 1; 3 1 1];
+[N, D] = eig(A);
+disp('Eigenvalues:');
+disp(D);
+disp('Eigenvectors:');
+disp(N);
+    </pre>
+    <p class="output">Output: Eigenvalues = [-2, 3, 6]; Eigenvectors matrix displayed.</p>
+
+    <!-- Linearly Independent/Dependent Vectors -->
+    <h2>3. Linearly Independent/Dependent Vectors</h2>
+    <pre>
+A = [1 2 1; 2 1 1; 1 0 2];
+if det(A) == 0
+    disp('The vectors are dependent');
+else
+    disp('The vectors are independent');
+end
+    </pre>
+    <p class="output">Output: The vectors are independent (Determinant ≠ 0).</p>
+
+    <!-- Rolle's Theorem -->
+    <h2>4. Rolle's Theorem</h2>
+    <pre>
+syms x
+f(x) = (x - 1)^2 * (x - 3);
+df = diff(f, x);
+critical_points = solve(df == 0);
+disp('Critical Points:');
+disp(critical_points);
+    </pre>
+    <p class="output">Output: Critical points within the interval displayed.</p>
+
+    <!-- Mean Value Theorem -->
+    <h2>5. Mean Value Theorem</h2>
+    <pre>
+syms x
+f(x) = x^2;
+a = 0; b = 1;
+m = (f(b) - f(a)) / (b - a);
+c = solve(diff(f, x) == m, x);
+disp('Point c satisfying Mean Value Theorem:');
+disp(c);
+    </pre>
+    <p class="output">Output: Point c within the interval displayed.</p>
+
+    <!-- Ordinary Differential Equations -->
+    <h2>6. Ordinary Differential Equations</h2>
+    <pre>
+syms x y(x)
+ySol = dsolve(diff(y, x, 2) + 4*diff(y, x) - 5*y == 0);
+disp('Solution:');
+disp(ySol);
+    </pre>
+    <p class="output">Output: General solution of the ODE displayed.</p>
+
+    <!-- Maxima and Minima -->
+    <h2>7. Maxima and Minima</h2>
+    <pre>
+syms x
+f(x) = x^3 - 6*x^2 + 9*x + 1;
+df = diff(f, x);
+critical_points = solve(df == 0);
+second_derivative = diff(f, x, 2);
+disp('Critical Points and Nature:');
+for i = 1:length(critical_points)
+    if subs(second_derivative, x, critical_points(i)) > 0
+        disp(['Point ', char(critical_points(i)), ' is a Minimum']);
+    else
+        disp(['Point ', char(critical_points(i)), ' is a Maximum']);
+    end
+end
+    </pre>
+    <p class="output">Output: Critical points identified as minima or maxima.</p>
+
+    <!-- Beta and Gamma Functions -->
+    <h2>8. Beta and Gamma Functions</h2>
+    <pre>
+syms x
+gammaValue = gamma(5);
+disp('Gamma Function Value:');
+disp(gammaValue);
+betaValue = beta(2, 3);
+disp('Beta Function Value:');
+disp(betaValue);
+    </pre>
+    <p class="output">Output: Gamma = 24; Beta = 1/6.</p>
+
+    <!-- Integration -->
+    <h2>9. Integration</h2>
+    <pre>
+syms x
+f = x^2;
+I = int(f, x, 0, 2); % Definite integral
+disp('Integration Result:');
+disp(I);
+    </pre>
+    <p class="output">Output: Integration result = 8/3.</p>
+
+    <!-- Gradient -->
+    <h2>10. Gradient</h2>
+    <pre>
+syms x y
+f = x^2 + y^2;
+grad_f = gradient(f);
+disp('Gradient:');
+disp(grad_f);
+    </pre>
+    <p class="output">Output: Gradient = [2x; 2y].</p>
+
+    <!-- Divergence -->
+    <h2>11. Divergence</h2>
+    <pre>
+syms x y z
+F = [x^2*y, -2*x*z, 2*y*z];
+div_F = divergence(F);
+disp('Divergence:');
+disp(div_F);
+    </pre>
+    <p class="output">Output: Divergence = 2xy - 2z.</p>
+
+    <!-- Curl -->
+    <h2>12. Curl</h2>
+    <pre>
+syms x y z
+F = [x^2*y, -2*x*z, 2*y*z];
+curl_F = curl(F);
+disp('Curl:');
+disp(curl_F);
+    </pre>
+    <p class="output">Output: Curl = [2y - 2z; 0; -2x].</p>
+
+</body>
+</html>
