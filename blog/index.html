@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BLOG</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
+	<title>Blog</title>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content=" Protofolio, Tutorials">
+	<meta name="keywords" content="Dev Protofolio">
+	<meta name="author" content="Janarthanan">
+	<meta name="image" content="/images/favicon.jpg">
+
+	<link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
 		}
-		.post {
-			margin-bottom: 20px;
-			padding: 20px;
-			border: 1px solid #ccc;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+		img{
+			width: 100%
 		}
-		.post h2 {
-			margin-top: 0;
-		}
-		.post a {
-			text-decoration: none;
-			color: #337ab7;
-		}
-		.post a:hover {
-			color: #23527c;
-		}
+
 	</style>
+
 </head>
 <body>
-	<h1>NS2 Installation Guide</h1>
-	<div id="posts"></div>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+		
+<a href="">Retro Tech</a>
+		<ul id="navigation">
+			<li><a href="index.html#contact">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="blog.html">Projects</a></li>
+						<li><a href="me.html">Profile</a></li>
+		</ul>
+	</div>
+
+	<div class="main-container">
+				<h3 style="text-align: center;">Some of My Past Projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/dash.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Laboratory Management System</h6>
+							<p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+							<a href="post.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/ecom.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Online Store - CoursePost Title</h6>
+							<p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+							<a href="post.html">Read More</a>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+	</div>
 	
-	<script>
-		const postsContainer = document.getElementById('posts');
-		
-		// Get a list of all HTML files in the same directory
-		const files = [];
-		const xhr = new XMLHttpRequest();
-		xhr.open('GET', './', true);
-		xhr.onload = function() {
-			if (xhr.status === 200) {
-				const html = xhr.responseText;
-				const links = html.match(/<a href="([^"]+\.html)">/g);
-				links.forEach(link => {
-					const file = link.match(/href="([^"]+\.html)">/)[1];
-					files.push(file);
-				});
-			}
-		};
-		xhr.send();
-		
-		// Create a list of posts
-		files.forEach(file => {
-			const post = document.createElement('div');
-			post.className = 'post';
-			const title = document.createElement('h2');
-			title.textContent = file.replace('.html', '');
-			const link = document.createElement('a');
-			link.href = file;
-			link.textContent = 'Read more';
-			post.appendChild(title);
-			post.appendChild(link);
-			postsContainer.appendChild(post);
-		});
-	</script>
+
 </body>
 </html>
