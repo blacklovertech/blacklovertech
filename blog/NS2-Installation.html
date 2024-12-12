@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NS2 Installation Guide</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.step {
+			margin-bottom: 20px;
+		}
+		.step img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>NS2 Installation Guide</h1>
+	<p>Follow these steps to install NS2 on your Ubuntu system.</p>
+	
+	<h2>Step 1: System Requirements</h2>
+	<p>Make sure your system meets the following requirements:</p>
+	<ul>
+		<li>OS: Ubuntu 14.04 LTS (32-bit)</li>
+		<li>RAM: Minimum 2GB</li>
+		<li>Processor: 2.5 GHz and above</li>
+	</ul>
+	
+	<h2>Step 2: Download NS2</h2>
+	<p>Download the ns-allinone-2.35.tar.gz package from the following URL:</p>
+	<a href="https://osdn.net/projects/sfnet_nsnam/downloads/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz/">https://osdn.net/projects/sfnet_nsnam/downloads/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz/</a>
+	
+	<h2>Step 3: Install Required Packages</h2>
+	<p>Open a terminal and execute the following command:</p>
+	<pre>sudo apt-get install gcc g++ python python-dev mercurial bzr gdb valgrind gsl-bin libgsl0-dev libgsl0ldbl flex bison tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev libgtk2.0-0 libgtk2.0-dev uncrustify doxygen graphviz imagemagick texlive texlive-latex-extra texlive-generic-extra texlive-generic-recommended texinfo dia texlive texlive-latex-extra texlive-extra-utils texlive-generic-recommended texi2html python-pygraphviz python-kiwi python-pygoocanvas libgoocanvas-dev python-pygccxml</pre>
+	
+	<h2>Step 4: Extract NS2</h2>
+	<p>Extract the ns-allinone-2.35.tar.gz file to your home directory:</p>
+	<pre>tar -xvf ns-allinone-2.35.tar.gz</pre>
+	
+	<h2>Step 5: Change Directory</h2>
+	<p>Change to the ns-allinone-2.35 directory:</p>
+	<pre>cd ns-allinone-2.35</pre>
+	
+	<h2>Step 6: Execute Install Script</h2>
+	<p>Execute the install script:</p>
+	<pre>sudo ./install</pre>
+	
+	<h2>Step 7: Install NAM</h2>
+	<p>Install the NAM package:</p>
+	<pre>sudo apt-get install nam</pre>
+	
+	<h2>Step 8: Install XGraph</h2>
+	<p>Install the XGraph package:</p>
+	<pre>sudo apt-get install xgraph</pre>
+	
+	<h2>Step 9: Install FFmpeg</h2>
+	<p>Install the FFmpeg package:</p>
+	<pre>sudo apt-get install ffmpeg</pre>
+	
+	<h2>Step 10: Verify Installation</h2>
+	<p>Verify that NS2 has been installed successfully:</p>
+	<pre>ns</pre>
+	
+	<h2>Step 11: Run NS2</h2>
+	<p>Run NS2:</p>
+	<pre>ns your_script.tcl</pre>
+	
+	<h2>Step 12: Visualize Results</h2>
+	<p>Visualize the results using NAM:</p>
+	<pre>nam your_script.nam</pre>
+	
+	<p>Congratulations! You have successfully installed NS2 on your Ubuntu system.</p>
+</body>
+</html>
