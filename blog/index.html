@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.post {
+			margin-bottom: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.post h2 {
+			margin-top: 0;
+		}
+		.post a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		.post a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<h1>NS2 Installation Guide</h1>
+	<div id="posts"></div>
+	
+	<script>
+		const postsContainer = document.getElementById('posts');
+		
+		// Get a list of all HTML files in the same directory
+		const files = [];
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', './', true);
+		xhr.onload = function() {
+			if (xhr.status === 200) {
+				const html = xhr.responseText;
+				const links = html.match(/<a href="([^"]+\.html)">/g);
+				links.forEach(link => {
+					const file = link.match(/href="([^"]+\.html)">/)[1];
+					files.push(file);
+				});
+			}
+		};
+		xhr.send();
+		
+		// Create a list of posts
+		files.forEach(file => {
+			const post = document.createElement('div');
+			post.className = 'post';
+			const title = document.createElement('h2');
+			title.textContent = file.replace('.html', '');
+			const link = document.createElement('a');
+			link.href = file;
+			link.textContent = 'Read more';
+			post.appendChild(title);
+			post.appendChild(link);
+			postsContainer.appendChild(post);
+		});
+	</script>
+</body>
+</html>
