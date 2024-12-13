@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>Janarthanan</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio, Tutorials">
-    <meta name="keywords" content="Dev Portfolio">
+    <meta name="description" content="Protofolio, Tutorials">
+    <meta name="keywords" content="Dev Protofolio">
     <meta name="author" content="Janarthanan">
     <meta name="image" content="/images/favicon.jpg">
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="css/default.css"> <!-- Default theme link -->
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <script type="text/javascript" src="js/script.js"></script>
-    <title>Janarthanan</title>
 </head>
-
 <body>
     <section class="s1">
         <div class="main-container">
@@ -36,7 +33,6 @@
                             <div id="dot-3" class="browser-dot"></div>
                         </div>
                     </a>
-
                     <ul id="navigation">
                         <li><a href="index">Home</a></li>
                         <li><a href="contact">Contact</a></li>
@@ -45,7 +41,7 @@
                     </ul>
                 </div>
                 <div class="left-column">
-                    <img id="profile_pic" src="images/favicon.jpg" alt="Profile Picture"><br>
+                    <img id="profile_pic" src="images/favicon.jpg"><br>
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
                         <div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -61,7 +57,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
-                            <p> Mentor 🧑&zwj;🏫 | Freelance 💵 Developer | ❣️ Learning and Programming.</p>
+                            <p> Mentor 🧑&zwj;🏫 | Freelance 💵 Developer |❣️ Learning and Programming.</p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
                         </div>
@@ -74,6 +70,21 @@
             <p class="copy">Built with ♡ by Janarthanan</p>
         </div>
     </section>
-</body>
 
+    <script>
+        // Ensure DOM is fully loaded before running the script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Safe manipulation of DOM elements after ensuring their existence
+            const themeDots = document.querySelectorAll('.theme-dot');
+            if (themeDots) {
+                themeDots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        let mode = this.getAttribute('data-mode');
+                        document.body.className = mode; // Set the class to change theme
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </html>
