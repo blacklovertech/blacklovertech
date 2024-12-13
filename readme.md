@@ -12,6 +12,7 @@
 - 📄 Know about my experiences: [Resume](https://blacklovertech.in/resume)
 
 - ⚡ Fun fact: **I love Learing and Programming Code's!**
+-  🏗️ build new projects just to tickle my brain and love teaching others how they're made.
 
 ---
 
