@@ -1,17 +1,17 @@
 <h1 align="center">Hi 👋, I'm Janarthanan</h1>
-<h3 align="center">A Passionate Full Stack Developer and Programmer from India</h3>
+<h3 align="center">A Passionate Full Stack Developer and Programmer !!</h3>
 
-- 🔭 I’m currently working on [Property Management System](http://skltheniproperty.in/wordpress/)
+- 🔭 I’m currently working on [Projects](https://blacklovertech.in/projects)
 
-- 🌱 I’m currently learning **React Js**
+- 🌱 I’m currently learning **Ruby on Rails**
 
-- 📝 I regularly write articles on [Black Lover Tech Blog](https://blacklovertech.blogspot.com/)
+- 📝 I regularly write articles on [Black Lover Tech Blog](https://blog.blacklovertech.in/)
 
-- 💬 Ask me about **PHP, JSP, ASP, Project Development**
+- 💬 Ask me about **PHP, ASP.Net, Laravel, System Administration, JSP, Python, Java, Software Development, Application Development, Flutter, Firebase, SQL, NoSQL, Machine Learning, API, Selenium** [Tech Stack](https://blacklovertech.in/techstack)
 
-- 📄 Know about my experiences: [Resume](janarthanan/resume.html)
+- 📄 Know about my experiences: [Resume](https://blacklovertech.in/resume)
 
-- ⚡ Fun fact: **I love helping with projects!**
+- ⚡ Fun fact: **I love Learing and Programming Code's!**
 
 ---
 
@@ -20,25 +20,7 @@
   <a href="https://codepen.io/blacklovertech" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="blacklovertech" height="30" width="40" />
   </a>
-  <a href="https://twitter.com/jana23071" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="jana23071" height="30" width="40" />
-  </a>
-  <a href="https://linkedin.com/in/janasuba2307" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="janasuba2307" height="30" width="40" />
-  </a>
-  <a href="https://fb.com/janasuba2307" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="janasuba2307" height="30" width="40" />
-  </a>
-  <a href="https://instagram.com/mr_sorrowsoul" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="mr_sorrowsoul" height="30" width="40" />
-  </a>
-  <a href="https://www.youtube.com/c/retrotech96" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="retrotech96" height="30" width="40" />
-  </a>
-  <a href="https://www.hackerrank.com/janasuba2307" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="janasuba2307" height="30" width="40" />
-  </a>
-  <a href="https://blacklovertech.blogspot.com/" target="_blank">
+  <a href="https://blog.blacklovertech.in/" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="blacklovertech blog" height="30" width="40" />
   </a>
 </p>
