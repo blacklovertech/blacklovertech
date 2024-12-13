@@ -18,6 +18,12 @@
 
 }
 
+@font-face {
+	font-family: FigtreeVF;
+	src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");
+	font-weight: 100 1000;
+	font-display: swap
+}
 
 html, body{
 	padding: 0;
