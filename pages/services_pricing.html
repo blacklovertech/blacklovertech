@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Pricing - Janarthanan Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjanarthana6832back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary font-inter">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                        <a href="projects_showcase.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Projects</a>
+                        <a href="technical_blog.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Blog</a>
+                        <a href="services_pricing.html" class="nav-indicator active text-accent font-medium px-3 py-2 text-sm">Services</a>
+                        <a href="about_experience.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">About</a>
+                        <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="portfolio_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Home</a>
+                <a href="projects_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Projects</a>
+                <a href="technical_blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Blog</a>
+                <a href="services_pricing.html" class="block px-3 py-2 text-accent font-medium">Services</a>
+                <a href="about_experience.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">About</a>
+                <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 pb-16 bg-gradient-to-br from-surface to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-fluid-4xl font-bold text-primary mb-6">
+                    Professional <span class="text-accent">Development Services</span>
+                </h1>
+                <p class="text-fluid-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                    Transform your ideas into powerful digital solutions with comprehensive development services tailored to your business needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                        View Services
+                    </a>
+                    <a href="contact_consultation.html" class="border border-accent text-accent px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-smooth">
+                        Get Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Service Offerings</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Comprehensive development solutions across modern technologies and platforms.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Full-Stack Development Service -->
+                <div class="bg-surface rounded-lg p-8 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary">Full-Stack Development</h3>
+                            <p class="text-accent font-semibold">Starting at $2,500</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">
+                        End-to-end web application development with modern frameworks, responsive design, and scalable architecture.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-3">Technologies & Expertise:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">React.js</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-2">Timeline: 4-8 weeks</h4>
+                        <p class="text-text-secondary text-sm">Depending on project complexity and requirements</p>
+                    </div>
+                    <button onclick="toggleServiceDetails('fullstack')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                        Learn More →
+                    </button>
+                    <div id="fullstack-details" class="disclosure-content mt-4">
+                        <div class="disclosure-inner">
+                            <div class="border-t border-border pt-4">
+                                <h5 class="font-medium text-primary mb-3">Project Phases:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Requirements analysis and planning</li>
+                                    <li>• UI/UX design and prototyping</li>
+                                    <li>• Frontend development and integration</li>
+                                    <li>• Backend API development</li>
+                                    <li>• Database design and optimization</li>
+                                    <li>• Testing and quality assurance</li>
+                                    <li>• Deployment and maintenance</li>
+                                </ul>
+                                <h5 class="font-medium text-primary mb-3">Deliverables:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm">
+                                    <li>• Fully functional web application</li>
+                                    <li>• Responsive design across all devices</li>
+                                    <li>• Source code and documentation</li>
+                                    <li>• Deployment guide and support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Solutions Service -->
+                <div class="bg-surface rounded-lg p-8 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary">IoT Solutions</h3>
+                            <p class="text-success font-semibold">Starting at $3,000</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">
+                        Custom IoT applications and hardware integration for smart automation systems and connected devices.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-3">Technologies & Expertise:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Arduino</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Raspberry Pi</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">MQTT</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">C++</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">InfluxDB</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-2">Timeline: 6-12 weeks</h4>
+                        <p class="text-text-secondary text-sm">Including hardware setup and testing</p>
+                    </div>
+                    <button onclick="toggleServiceDetails('iot')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                        Learn More →
+                    </button>
+                    <div id="iot-details" class="disclosure-content mt-4">
+                        <div class="disclosure-inner">
+                            <div class="border-t border-border pt-4">
+                                <h5 class="font-medium text-primary mb-3">Project Phases:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Hardware requirements analysis</li>
+                                    <li>• Sensor integration and calibration</li>
+                                    <li>• Communication protocol setup</li>
+                                    <li>• Data collection and processing</li>
+                                    <li>• Dashboard and monitoring interface</li>
+                                    <li>• Security implementation</li>
+                                    <li>• Field testing and optimization</li>
+                                </ul>
+                                <h5 class="font-medium text-primary mb-3">Deliverables:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm">
+                                    <li>• Complete IoT system setup</li>
+                                    <li>• Real-time monitoring dashboard</li>
+                                    <li>• Mobile app for remote control</li>
+                                    <li>• Documentation and training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SaaS Development Service -->
+                <div class="bg-surface rounded-lg p-8 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary">SaaS Development</h3>
+                            <p class="text-warning font-semibold">Starting at $5,000</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">
+                        Scalable multi-tenant SaaS platforms with advanced features, integrations, and subscription management.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-3">Technologies & Expertise:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Redis</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Stripe</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">AWS</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Docker</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-2">Timeline: 8-16 weeks</h4>
+                        <p class="text-text-secondary text-sm">MVP to full-featured platform</p>
+                    </div>
+                    <button onclick="toggleServiceDetails('saas')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                        Learn More →
+                    </button>
+                    <div id="saas-details" class="disclosure-content mt-4">
+                        <div class="disclosure-inner">
+                            <div class="border-t border-border pt-4">
+                                <h5 class="font-medium text-primary mb-3">Project Phases:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Market research and MVP planning</li>
+                                    <li>• Multi-tenant architecture design</li>
+                                    <li>• User authentication and authorization</li>
+                                    <li>• Subscription and billing integration</li>
+                                    <li>• Analytics and reporting dashboard</li>
+                                    <li>• API development and documentation</li>
+                                    <li>• Scaling and performance optimization</li>
+                                </ul>
+                                <h5 class="font-medium text-primary mb-3">Deliverables:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm">
+                                    <li>• Fully functional SaaS platform</li>
+                                    <li>• Admin and user dashboards</li>
+                                    <li>• Payment processing integration</li>
+                                    <li>• API documentation and SDKs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Consulting Service -->
+                <div class="bg-surface rounded-lg p-8 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-error/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary">Technical Consulting</h3>
+                            <p class="text-error font-semibold">$150/hour</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">
+                        Expert technical guidance, code reviews, architecture planning, and technology stack recommendations.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-3">Consulting Areas:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Architecture</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Code Review</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Performance</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Security</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">DevOps</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Mentoring</span>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-primary mb-2">Flexible Scheduling</h4>
+                        <p class="text-text-secondary text-sm">One-time sessions or ongoing support</p>
+                    </div>
+                    <button onclick="toggleServiceDetails('consulting')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                        Learn More →
+                    </button>
+                    <div id="consulting-details" class="disclosure-content mt-4">
+                        <div class="disclosure-inner">
+                            <div class="border-t border-border pt-4">
+                                <h5 class="font-medium text-primary mb-3">Service Types:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Technical architecture review</li>
+                                    <li>• Code quality assessment</li>
+                                    <li>• Performance optimization</li>
+                                    <li>• Security audit and recommendations</li>
+                                    <li>• Technology stack evaluation</li>
+                                    <li>• Team mentoring and training</li>
+                                    <li>• Project planning and estimation</li>
+                                </ul>
+                                <h5 class="font-medium text-primary mb-3">Deliverables:</h5>
+                                <ul class="space-y-2 text-text-secondary text-sm">
+                                    <li>• Detailed technical reports</li>
+                                    <li>• Actionable recommendations</li>
+                                    <li>• Implementation roadmaps</li>
+                                    <li>• Follow-up support sessions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Visualization Section -->
+    <section id="skills-visualization" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Technical Expertise</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Proficiency levels across technologies and frameworks used in service delivery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Frontend Technologies -->
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-8 text-center">Frontend Technologies</h3>
+                    <div class="space-y-8">
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">React.js</span>
+                                <span class="text-accent font-semibold">95%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#3b82f6" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="12.56" class="skill-circle" data-percentage="95"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-accent">95%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">Vue.js</span>
+                                <span class="text-accent font-semibold">90%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#3b82f6" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="25.12" class="skill-circle" data-percentage="90"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-accent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">TypeScript</span>
+                                <span class="text-accent font-semibold">88%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#3b82f6" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="30.14" class="skill-circle" data-percentage="88"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-accent">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-8 text-center">Backend Technologies</h3>
+                    <div class="space-y-8">
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">Laravel</span>
+                                <span class="text-success font-semibold">92%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#10b981" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="20.10" class="skill-circle" data-percentage="92"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-success">92%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">Node.js</span>
+                                <span class="text-success font-semibold">87%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#10b981" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="32.66" class="skill-circle" data-percentage="87"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-success">87%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-circle-container">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-text-primary font-medium">Python</span>
+                                <span class="text-success font-semibold">83%</span>
+                            </div>
+                            <div class="relative w-24 h-24 mx-auto">
+                                <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="50" cy="50" r="40" stroke="#10b981" stroke-width="8" fill="none" stroke-dasharray="251.2" stroke-dashoffset="42.70" class="skill-circle" data-percentage="83"/>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-sm font-semibold text-success">83%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Client Testimonials</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Success stories from satisfied clients across various industries.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-surface rounded-lg p-6 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Michael Chen</h4>
+                            <p class="text-text-secondary text-sm">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="text-text-secondary">
+                        "Janarthanan delivered our SaaS platform ahead of schedule with exceptional quality. His expertise in Laravel and Vue.js made our complex requirements seem effortless."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-surface rounded-lg p-6 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b9c7e6c8?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/11/02/14/27/model-2911363_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Sarah Johnson</h4>
+                            <p class="text-text-secondary text-sm">CTO, SmartHome Solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="text-text-secondary">
+                        "The IoT solution Janarthanan built for our smart home system exceeded expectations. His deep understanding of hardware integration and real-time data processing was impressive."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-surface rounded-lg p-6 hover-elevate transition-elevation">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="David Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">David Rodriguez</h4>
+                            <p class="text-text-secondary text-sm">Founder, EcoTech Innovations</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="text-text-secondary">
+                        "Working with Janarthanan was a game-changer for our startup. His full-stack expertise and attention to detail helped us launch our MVP successfully and scale rapidly."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals Section -->
+    <section id="trust-signals" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Professional Credentials</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Certifications, contributions, and professional achievements that demonstrate expertise and reliability.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- GitHub Contributions -->
+                <div class="text-center p-6 bg-white rounded-lg hover-elevate transition-elevation">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">GitHub</h3>
+                    <p class="text-text-secondary text-sm mb-2">500+ Contributions</p>
+                    <p class="text-text-secondary text-xs">Active open-source contributor</p>
+                </div>
+
+                <!-- LinkedIn Recommendations -->
+                <div class="text-center p-6 bg-white rounded-lg hover-elevate transition-elevation">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">LinkedIn</h3>
+                    <p class="text-text-secondary text-sm mb-2">25+ Recommendations</p>
+                    <p class="text-text-secondary text-xs">Professional network validation</p>
+                </div>
+
+                <!-- Project Success Rate -->
+                <div class="text-center p-6 bg-white rounded-lg hover-elevate transition-elevation">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Success Rate</h3>
+                    <p class="text-text-secondary text-sm mb-2">98% Project Success</p>
+                    <p class="text-text-secondary text-xs">On-time delivery guarantee</p>
+                </div>
+
+                <!-- Years of Experience -->
+                <div class="text-center p-6 bg-white rounded-lg hover-elevate transition-elevation">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Experience</h3>
+                    <p class="text-text-secondary text-sm mb-2">5+ Years</p>
+                    <p class="text-text-secondary text-xs">Full-stack development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Integration Section -->
+    <section id="contact-integration" class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-fluid-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-fluid-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Let's discuss your requirements and create a custom solution that drives your business forward.
+            </p>
+            
+            <!-- Quick Contact Form -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-accent transition-smooth" />
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-accent transition-smooth" />
+                        </div>
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:border-accent transition-smooth">
+                            <option value>Select Service</option>
+                            <option value="fullstack">Full-Stack Development</option>
+                            <option value="iot">IoT Solutions</option>
+                            <option value="saas">SaaS Development</option>
+                            <option value="consulting">Technical Consulting</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea placeholder="Project Description" rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-accent transition-smooth resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_consultation.html" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                    Schedule Consultation
+                </a>
+                <a href="portfolio_homepage.html" class="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition-smooth">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Full-stack developer passionate about creating innovative solutions with modern technologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                        <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                        <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">janarthanan@example.com</li>
+                        <li class="text-text-secondary">+1 (555) 123-4567</li>
+                        <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-accent text-white p-3 rounded-full shadow-large hover:bg-blue-600 transition-smooth opacity-0 invisible">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Service Details Toggle
+        function toggleServiceDetails(serviceId) {
+            const detailsElement = document.getElementById(`${serviceId}-details`);
+            detailsElement.classList.toggle('expanded');
+        }
+
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Skills Circle Animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillCircles = entry.target.querySelectorAll('.skill-circle');
+                    skillCircles.forEach(circle => {
+                        const percentage = circle.getAttribute('data-percentage');
+                        const circumference = 2 * Math.PI * 40; // radius = 40
+                        const offset = circumference - (percentage / 100) * circumference;
+                        
+                        circle.style.strokeDashoffset = circumference;
+                        setTimeout(() => {
+                            circle.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+                            circle.style.strokeDashoffset = offset;
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.getElementById('skills-visualization');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Form Submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            alert('Thank you for your inquiry! I will get back to you within 24 hours.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Navigation Active State
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-indicator');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Lazy Loading for Images
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.src;
+                    img.classList.remove('skeleton');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

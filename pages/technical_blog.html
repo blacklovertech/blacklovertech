@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Blog - Janarthanan</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjanarthana6832back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary font-inter">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                        <a href="projects_showcase.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Projects</a>
+                        <a href="technical_blog.html" class="nav-indicator active text-accent font-medium px-3 py-2 text-sm">Blog</a>
+                        <a href="services_pricing.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Services</a>
+                        <a href="about_experience.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">About</a>
+                        <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Search Bar (Desktop) -->
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search articles..." class="w-64 pl-10 pr-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+                        <svg class="absolute left-3 top-2.5 h-5 w-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Mobile Search -->
+                <div class="px-3 py-2">
+                    <div class="relative">
+                        <input type="text" id="mobile-search-input" placeholder="Search articles..." class="w-full pl-10 pr-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+                        <svg class="absolute left-3 top-2.5 h-5 w-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <a href="portfolio_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Home</a>
+                <a href="projects_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Projects</a>
+                <a href="technical_blog.html" class="block px-3 py-2 text-accent font-medium">Blog</a>
+                <a href="services_pricing.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Services</a>
+                <a href="about_experience.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">About</a>
+                <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Featured Article Hero Section -->
+    <section id="featured-hero" class="pt-20 pb-12 bg-gradient-to-br from-surface to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-fluid-4xl font-bold text-primary mb-4">Technical Blog</h1>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Insights, tutorials, and thoughts on modern web development, IoT, and emerging technologies.
+                </p>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="bg-white rounded-lg shadow-medium overflow-hidden hover-elevate transition-elevation">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="h-64 lg:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern JavaScript Frameworks" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-8 flex flex-col justify-center">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                            <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">Web Development</span>
+                        </div>
+                        <h2 class="text-fluid-2xl font-bold text-primary mb-4">Modern JavaScript Frameworks: A Comprehensive Comparison</h2>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            Exploring the latest trends in JavaScript frameworks and their impact on modern web development. 
+                            This comprehensive guide covers React, Vue, Angular, and emerging frameworks with practical examples and performance comparisons.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <span>July 12, 2025</span>
+                                <span class="mx-2">•</span>
+                                <span>8 min read</span>
+                            </div>
+                            <button onclick="readArticle('featured')" class="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-smooth">
+                                Read Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section id="blog-content" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-3">
+                    <!-- Category Filter -->
+                    <div class="mb-8">
+                        <div class="flex flex-wrap gap-3">
+                            <button onclick="filterByCategory('all')" class="category-filter active bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth">
+                                All Articles
+                            </button>
+                            <button onclick="filterByCategory('web-development')" class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth">
+                                Web Development
+                            </button>
+                            <button onclick="filterByCategory('iot')" class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth">
+                                IoT
+                            </button>
+                            <button onclick="filterByCategory('saas')" class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth">
+                                SaaS
+                            </button>
+                            <button onclick="filterByCategory('tutorials')" class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-smooth">
+                                Tutorials
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Articles Grid -->
+                    <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Article Card 1 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="iot">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IoT Security Best Practices" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">IoT</span>
+                                    <span class="bg-error/10 text-error px-3 py-1 rounded-full text-sm font-medium">Security</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">IoT Security Best Practices for 2025</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Essential security considerations when developing IoT applications and connected devices. Learn about encryption, authentication, and secure communication protocols.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>July 8, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>7 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('iot-security')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Article Card 2 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="saas">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SaaS Architecture Patterns" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-warning/10 text-warning px-3 py-1 rounded-full text-sm font-medium">SaaS</span>
+                                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Architecture</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Scalable SaaS Architecture Patterns</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Building robust and scalable SaaS applications with modern architecture patterns and best practices. Multi-tenancy, microservices, and deployment strategies.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>July 5, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>6 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('saas-architecture')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Article Card 3 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="web-development">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laravel Performance Optimization" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-error/10 text-error px-3 py-1 rounded-full text-sm font-medium">Laravel</span>
+                                    <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">Performance</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Laravel Performance Optimization Techniques</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Advanced techniques for optimizing Laravel applications including caching strategies, database optimization, and performance monitoring tools.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>July 2, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>9 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('laravel-performance')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Article Card 4 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="tutorials">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flutter State Management" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Flutter</span>
+                                    <span class="bg-warning/10 text-warning px-3 py-1 rounded-full text-sm font-medium">Tutorial</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Flutter State Management: Complete Guide</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Comprehensive tutorial on Flutter state management patterns including Provider, Bloc, Riverpod, and GetX with practical examples.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>June 28, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>12 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('flutter-state')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Article Card 5 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="web-development">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="API Design Best Practices" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">API</span>
+                                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Best Practices</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">RESTful API Design Best Practices</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Essential guidelines for designing robust, scalable, and maintainable RESTful APIs with proper authentication, versioning, and documentation.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>June 25, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>8 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('api-design')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Article Card 6 -->
+                        <article class="article-card bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation" data-category="iot">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino IoT Projects" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg'; this.onerror=null;" />
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">Arduino</span>
+                                    <span class="bg-warning/10 text-warning px-3 py-1 rounded-full text-sm font-medium">Projects</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Building Smart Home Systems with Arduino</h3>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Step-by-step guide to creating intelligent home automation systems using Arduino, sensors, and cloud connectivity for remote monitoring.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center text-sm text-text-secondary">
+                                        <span>June 22, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>10 min read</span>
+                                    </div>
+                                    <button onclick="readArticle('arduino-smart-home')" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                        Read More →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="text-center mt-12">
+                        <button onclick="loadMoreArticles()" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                            Load More Articles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Author Bio -->
+                    <div class="bg-surface rounded-lg p-6 mb-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Janarthanan" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            </div>
+                            <h3 class="font-semibold text-primary mb-2">Janarthanan</h3>
+                            <p class="text-sm text-text-secondary mb-4">
+                                Full-stack developer passionate about sharing knowledge and building innovative solutions.
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="bg-surface rounded-lg p-6 mb-8">
+                        <h3 class="font-semibold text-primary mb-4">Recent Posts</h3>
+                        <div class="space-y-4">
+                            <div class="flex space-x-3">
+                                <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Recent Post" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg'; this.onerror=null;" />
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-primary mb-1">Modern JavaScript Frameworks</h4>
+                                    <p class="text-xs text-text-secondary">July 12, 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-3">
+                                <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Recent Post" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg'; this.onerror=null;" />
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-primary mb-1">IoT Security Best Practices</h4>
+                                    <p class="text-xs text-text-secondary">July 8, 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-3">
+                                <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Recent Post" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'; this.onerror=null;" />
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-primary mb-1">Scalable SaaS Architecture</h4>
+                                    <p class="text-xs text-text-secondary">July 5, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular Articles -->
+                    <div class="bg-surface rounded-lg p-6 mb-8">
+                        <h3 class="font-semibold text-primary mb-4">Popular Articles</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-primary">Laravel Performance Tips</span>
+                                <span class="text-xs text-text-secondary">2.5k views</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-primary">Flutter State Management</span>
+                                <span class="text-xs text-text-secondary">1.8k views</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-primary">API Design Patterns</span>
+                                <span class="text-xs text-text-secondary">1.2k views</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-primary">Arduino IoT Projects</span>
+                                <span class="text-xs text-text-secondary">950 views</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="bg-accent/5 border border-accent/20 rounded-lg p-6">
+                        <h3 class="font-semibold text-primary mb-2">Stay Updated</h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            Get the latest articles and tutorials delivered to your inbox.
+                        </p>
+                        <form onsubmit="subscribeNewsletter(event)" class="space-y-3">
+                            <input type="email" placeholder="Enter your email" class="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-sm" />
+                            <button type="submit" class="w-full bg-accent text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-60 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b border-border p-6 flex justify-between items-center">
+                    <h2 id="modal-title" class="text-xl font-semibold text-primary">Article Title</h2>
+                    <button onclick="closeArticleModal()" class="text-text-secondary hover:text-primary transition-smooth">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content" class="p-6">
+                    <!-- Article content will be loaded here -->
+                </div>
+                <div class="border-t border-border p-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-4">
+                            <button onclick="shareArticle('linkedin')" class="flex items-center space-x-2 text-text-secondary hover:text-accent transition-smooth">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span class="text-sm">Share</span>
+                            </button>
+                            <button onclick="shareArticle('twitter')" class="flex items-center space-x-2 text-text-secondary hover:text-accent transition-smooth">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                                <span class="text-sm">Tweet</span>
+                            </button>
+                        </div>
+                        <div class="text-sm text-text-secondary">
+                            <span id="modal-date">July 12, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span id="modal-read-time">8 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Full-stack developer passionate about creating innovative solutions with modern technologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                        <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                        <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">janarthanan@example.com</li>
+                        <li class="text-text-secondary">+1 (555) 123-4567</li>
+                        <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-accent text-white p-3 rounded-full shadow-large hover:bg-blue-600 transition-smooth opacity-0 invisible">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search Functionality
+        function performSearch(query) {
+            const articles = document.querySelectorAll('.article-card');
+            const searchTerm = query.toLowerCase();
+
+            articles.forEach(article => {
+                const title = article.querySelector('h3').textContent.toLowerCase();
+                const content = article.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+
+        // Search Event Listeners
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            performSearch(e.target.value);
+        });
+
+        document.getElementById('mobile-search-input').addEventListener('input', (e) => {
+            performSearch(e.target.value);
+        });
+
+        // Category Filtering
+        function filterByCategory(category) {
+            const articles = document.querySelectorAll('.article-card');
+            const filterButtons = document.querySelectorAll('.category-filter');
+
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-accent', 'text-white');
+                btn.classList.add('bg-surface', 'text-text-secondary');
+            });
+
+            event.target.classList.add('active', 'bg-accent', 'text-white');
+            event.target.classList.remove('bg-surface', 'text-text-secondary');
+
+            // Filter articles
+            articles.forEach(article => {
+                if (category === 'all' || article.dataset.category === category) {
+                    article.style.display = 'block';
+                    article.classList.add('animate-fade-up');
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+
+        // Article Modal Functions
+        function readArticle(articleId) {
+            const modal = document.getElementById('article-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+            const modalDate = document.getElementById('modal-date');
+            const modalReadTime = document.getElementById('modal-read-time');
+
+            // Sample article content based on ID
+            const articles = {
+                'featured': {
+                    title: 'Modern JavaScript Frameworks: A Comprehensive Comparison',
+                    date: 'July 12, 2025',
+                    readTime: '8 min read',
+                    content: `
+                        <div class="prose max-w-none">
+                            <p class="text-lg text-text-secondary mb-6">JavaScript frameworks have revolutionized web development, offering developers powerful tools to build complex applications efficiently. In this comprehensive guide, we'll explore the most popular frameworks and their unique strengths.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">React: The Component King</h3>
+                            <p class="text-text-secondary mb-4">React's component-based architecture has made it the go-to choice for many developers. Its virtual DOM and extensive ecosystem provide unmatched flexibility.</p>
+                            
+                            <div class="bg-surface p-4 rounded-lg mb-6">
+                                <pre class="text-sm"><code class="language-javascript">
+function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+const element = &lt;Welcome name="Sara" /&gt;;
+                                </code></pre>
+                            </div>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Vue.js: The Progressive Framework</h3>
+                            <p class="text-text-secondary mb-4">Vue.js offers a gentle learning curve while maintaining powerful features. Its template syntax and reactive data binding make it developer-friendly.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Angular: The Full-Featured Platform</h3>
+                            <p class="text-text-secondary mb-4">Angular provides a complete solution with TypeScript integration, dependency injection, and a powerful CLI for enterprise applications.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Performance Comparison</h3>
+                            <p class="text-text-secondary mb-4">When choosing a framework, performance is crucial. Here's how they stack up in real-world scenarios...</p>
+                        </div>
+                    `
+                },
+                'iot-security': {
+                    title: 'IoT Security Best Practices for 2025',
+                    date: 'July 8, 2025',
+                    readTime: '7 min read',
+                    content: `
+                        <div class="prose max-w-none">
+                            <p class="text-lg text-text-secondary mb-6">As IoT devices become more prevalent, security concerns have reached critical levels. This guide covers essential security practices for IoT development.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Device Authentication</h3>
+                            <p class="text-text-secondary mb-4">Implementing robust authentication mechanisms is the first line of defense against unauthorized access.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Encryption Protocols</h3>
+                            <p class="text-text-secondary mb-4">End-to-end encryption ensures data integrity throughout the communication pipeline.</p>
+                            
+                            <h3 class="text-xl font-semibold text-primary mb-4">Regular Updates</h3>
+                            <p class="text-text-secondary mb-4">Maintaining up-to-date firmware and security patches is crucial for long-term security.</p>
+                        </div>
+                    `
+                }
+            };
+
+            const article = articles[articleId] || articles['featured'];
+            
+            modalTitle.textContent = article.title;
+            modalContent.innerHTML = article.content;
+            modalDate.textContent = article.date;
+            modalReadTime.textContent = article.readTime;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeArticleModal() {
+            const modal = document.getElementById('article-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Share Article Functions
+        function shareArticle(platform) {
+            const title = document.getElementById('modal-title').textContent;
+            const url = window.location.href;
+            
+            if (platform === 'linkedin') {
+                window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`, '_blank');
+            } else if (platform === 'twitter') {
+                window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`, '_blank');
+            }
+        }
+
+        // Newsletter Subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                alert('Thank you for subscribing! You will receive our latest articles in your inbox.');
+                event.target.reset();
+            }
+        }
+
+        // Load More Articles
+        function loadMoreArticles() {
+            // Simulate loading more articles
+            alert('Loading more articles... This would fetch additional content from the server.');
+        }
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('article-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'article-modal') {
+                closeArticleModal();
+            }
+        });
+
+        // Keyboard navigation for modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeArticleModal();
+            }
+        });
+
+        // Lazy Loading for Images
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.src;
+                    img.classList.remove('skeleton');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add fade-up animation to articles on load
+            const articles = document.querySelectorAll('.article-card');
+            articles.forEach((article, index) => {
+                setTimeout(() => {
+                    article.classList.add('animate-fade-up');
+                }, index * 100);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

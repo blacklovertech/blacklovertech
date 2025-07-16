@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Showcase - Janarthanan Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjanarthana6832back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary font-inter">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                        <a href="projects_showcase.html" class="nav-indicator active text-accent font-medium px-3 py-2 text-sm">Projects</a>
+                        <a href="technical_blog.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Blog</a>
+                        <a href="services_pricing.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Services</a>
+                        <a href="about_experience.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">About</a>
+                        <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex items-center">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search projects..." class="w-64 pl-10 pr-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Mobile Search -->
+                <div class="px-3 py-2">
+                    <div class="relative">
+                        <input type="text" id="mobile-search-input" placeholder="Search projects..." class="w-full pl-10 pr-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" />
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a href="portfolio_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Home</a>
+                <a href="projects_showcase.html" class="block px-3 py-2 text-accent font-medium">Projects</a>
+                <a href="technical_blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Blog</a>
+                <a href="services_pricing.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Services</a>
+                <a href="about_experience.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">About</a>
+                <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="pt-20 pb-4 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a>
+                    </li>
+                    <li>
+                        <svg class="flex-shrink-0 h-5 w-5 text-text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="text-accent font-medium">Projects</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-12 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-fluid-4xl font-bold text-primary mb-4">Projects Showcase</h1>
+                <p class="text-fluid-lg text-text-secondary max-w-3xl mx-auto">
+                    Explore my technical portfolio featuring full-stack applications, IoT solutions, and SaaS platforms. Each project demonstrates expertise in modern technologies and innovative problem-solving approaches.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="sticky top-16 bg-white/95 backdrop-blur-sm border-b border-border z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <!-- Filter Tags -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0">
+                    <span class="text-sm font-medium text-text-secondary whitespace-nowrap">Filter by:</span>
+                    <div class="flex gap-2">
+                        <button class="filter-tag active" data-filter="all">
+                            All Projects
+                        </button>
+                        <button class="filter-tag" data-filter="saas">
+                            SaaS
+                        </button>
+                        <button class="filter-tag" data-filter="iot">
+                            IoT
+                        </button>
+                        <button class="filter-tag" data-filter="laravel">
+                            Laravel
+                        </button>
+                        <button class="filter-tag" data-filter="flutter">
+                            Flutter
+                        </button>
+                        <button class="filter-tag" data-filter="react">
+                            React
+                        </button>
+                        <button class="filter-tag" data-filter="vue">
+                            Vue.js
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Count & Reset -->
+                <div class="flex items-center gap-4">
+                    <span id="results-count" class="text-sm text-text-secondary">
+                        Showing 12 projects
+                    </span>
+                    <button id="reset-filters" class="text-sm text-accent hover:text-blue-600 transition-smooth hidden">
+                        Reset Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="saas laravel vue">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-Commerce SaaS Platform" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">E-Commerce SaaS Platform</h3>
+                        <p class="text-text-secondary mb-4">Multi-tenant e-commerce solution with advanced inventory management, payment processing, and analytics dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">SaaS</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">MySQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="ecommerce-saas">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="iot react">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Home IoT System" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Smart Home IoT System</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive IoT solution for home automation with real-time monitoring, voice control, and mobile app integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">IoT</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Arduino</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">MQTT</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="smart-home-iot">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="flutter laravel">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile Banking App" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/06/15/mobile-phone-1867510_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Mobile Banking Application</h3>
+                        <p class="text-text-secondary mb-4">Secure mobile banking solution with biometric authentication, real-time transactions, and comprehensive financial management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="mobile-banking">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="saas vue">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Analytics Dashboard SaaS" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Analytics Dashboard SaaS</h3>
+                        <p class="text-text-secondary mb-4">Multi-tenant analytics platform with real-time data visualization, custom reporting, and advanced filtering capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">SaaS</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">MongoDB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="analytics-dashboard">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="react laravel">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Learning Management System" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Learning Management System</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive LMS with course creation, student progress tracking, interactive assessments, and video streaming capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Redis</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">AWS</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="learning-management">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="iot flutter">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Agricultural IoT Monitoring" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Agricultural IoT Monitoring</h3>
+                        <p class="text-text-secondary mb-4">Smart farming solution with soil moisture sensors, weather monitoring, automated irrigation, and crop health analytics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">IoT</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Raspberry Pi</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">InfluxDB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="agricultural-iot">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Project Cards (7-12) -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="saas react">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Management SaaS" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Project Management SaaS</h3>
+                        <p class="text-text-secondary mb-4">Collaborative project management platform with task tracking, team communication, and advanced reporting features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">SaaS</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Express</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Socket.io</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="project-management">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with more project cards... -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="flutter vue">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Food Delivery App" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Food Delivery Platform</h3>
+                        <p class="text-text-secondary mb-4">Multi-vendor food delivery platform with real-time tracking, payment integration, and restaurant management system.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Stripe</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">Google Maps</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="food-delivery">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More project cards... -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="react laravel">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Real Estate Platform" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Real Estate Platform</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive real estate marketplace with property listings, virtual tours, mortgage calculator, and agent management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Elasticsearch</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">AWS S3</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="real-estate">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with remaining project cards... -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="iot vue">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Industrial IoT Dashboard" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Industrial IoT Dashboard</h3>
+                        <p class="text-text-secondary mb-4">Industrial monitoring system with machine health tracking, predictive maintenance, and real-time alerts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">IoT</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">LoRaWAN</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">TimescaleDB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="industrial-iot">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final project cards... -->
+                <div class="project-card bg-surface rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden" data-tags="saas flutter">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Healthcare Management SaaS" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Healthcare Management SaaS</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive healthcare platform with patient records, appointment scheduling, telemedicine, and billing integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">SaaS</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">WebRTC</span>
+                            <span class="px-3 py-1 bg-error/10 text-error text-sm rounded-full">HIPAA</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-project="healthcare-saas">
+                                View Details →
+                            </button>
+                            <div class="flex gap-2">
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="Live Demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth" title="GitHub">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="max-w-md mx-auto">
+                    <svg class="mx-auto h-12 w-12 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.5-.881-6.172-2.328C5.828 12.672 5.828 12.328 6 12c0-2.486 1.346-4.672 3.379-5.863M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3 class="mt-2 text-sm font-medium text-text-primary">No projects found</h3>
+                    <p class="mt-1 text-sm text-text-secondary">Try adjusting your search or filter criteria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Lab Section -->
+    <section id="my-lab" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">My Lab</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Experimental prototypes and innovative concepts currently in development. These projects showcase emerging technologies and creative solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Lab Project 1 -->
+                <div class="lab-card bg-white rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">AI-Powered Code Review</h3>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Prototype</span>
+                        </div>
+                        <p class="text-text-secondary mb-4">Machine learning model that analyzes code quality, suggests improvements, and detects potential security vulnerabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">TensorFlow</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">NLP</span>
+                        </div>
+                        <button class="expand-lab-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-lab="ai-code-review">
+                            Learn More →
+                        </button>
+                        <div class="lab-content disclosure-content mt-4" id="lab-ai-code-review">
+                            <div class="disclosure-inner">
+                                <div class="border-t border-border pt-4">
+                                    <h4 class="font-semibold text-primary mb-2">Technical Details</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                        <li>• Natural language processing for code analysis</li>
+                                        <li>• Integration with popular IDEs and Git platforms</li>
+                                        <li>• Real-time feedback and suggestions</li>
+                                        <li>• Custom rule sets for different programming languages</li>
+                                    </ul>
+                                    <div class="flex gap-2">
+                                        <a href="javascript:void(0)" class="text-sm bg-accent text-white px-3 py-1 rounded hover:bg-blue-600 transition-smooth">View Demo</a>
+                                        <a href="javascript:void(0)" class="text-sm border border-accent text-accent px-3 py-1 rounded hover:bg-accent hover:text-white transition-smooth">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab Project 2 -->
+                <div class="lab-card bg-white rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Blockchain Supply Chain</h3>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Beta</span>
+                        </div>
+                        <p class="text-text-secondary mb-4">Decentralized supply chain tracking system using blockchain technology for transparency and authenticity verification.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Solidity</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Web3.js</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Ethereum</span>
+                        </div>
+                        <button class="expand-lab-btn text-accent font-medium hover:text-blue-600 transition-smooth" data-lab="blockchain-supply">
+                            Learn More →
+                        </button>
+                        <div class="lab-content disclosure-content mt-4" id="lab-blockchain-supply">
+                            <div class="disclosure-inner">
+                                <div class="border-t border-border pt-4">
+                                    <h4 class="font-semibold text-primary mb-2">Technical Details</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                        <li>• Smart contracts for automated verification</li>
+                                        <li>• QR code integration for product tracking</li>
+                                        <li>• Multi-stakeholder dashboard</li>
+                                        <li>• IPFS for decentralized document storage</li>
+                                    </ul>
+                                    <div class="flex gap-2">
+                                        <a href="javascript:void(0)" class="text-sm bg-accent text-white px-3 py-1 rounded hover:bg-blue-600 transition-smooth">View Demo</a>
+                                        <a href="javascript:void(0)" class="text-sm border border-accent text-accent px-3 py-1 rounded hover:bg-accent hover:text-white transition-smooth">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-60 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b border-border p-6 flex justify-between items-center">
+                    <h2 id="modal-title" class="text-2xl font-bold text-primary"></h2>
+                    <button id="close-modal" class="text-text-secondary hover:text-accent transition-smooth">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content" class="p-6">
+                    <!-- Modal content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Full-stack developer passionate about creating innovative solutions with modern technologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                        <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                        <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">janarthanan@example.com</li>
+                        <li class="text-text-secondary">+1 (555) 123-4567</li>
+                        <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-accent text-white p-3 rounded-full shadow-large hover:bg-blue-600 transition-smooth opacity-0 invisible">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Project data for modal content
+        const projectData = {
+            'ecommerce-saas': {
+                title: 'E-Commerce SaaS Platform',
+                description: 'A comprehensive multi-tenant e-commerce solution designed for businesses of all sizes. Features include advanced inventory management, payment processing, analytics dashboard, and customizable storefronts.',
+                technologies: ['Laravel', 'Vue.js', 'MySQL', 'Redis', 'Stripe API', 'AWS S3'],
+                features: [
+                    'Multi-tenant architecture with isolated data',
+                    'Real-time inventory tracking and management',
+                    'Integrated payment processing with multiple gateways',
+                    'Advanced analytics and reporting dashboard',
+                    'Customizable storefront themes',
+                    'Order management and fulfillment system',
+                    'Customer relationship management (CRM)',
+                    'SEO optimization tools'
+                ],
+                images: [
+                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                ],
+                demoUrl: 'javascript:void(0)',
+                githubUrl: 'javascript:void(0)'
+            },
+            'smart-home-iot': {
+                title: 'Smart Home IoT System',
+                description: 'A comprehensive IoT solution for home automation featuring real-time monitoring, voice control integration, and mobile app connectivity for seamless smart home management.',
+                technologies: ['Arduino', 'React', 'Node.js', 'MQTT', 'Firebase', 'Alexa Skills Kit'],
+                features: [
+                    'Real-time sensor data monitoring',
+                    'Voice control integration with Alexa and Google Assistant',
+                    'Mobile app for remote control and monitoring',
+                    'Automated scheduling and rule-based actions',
+                    'Energy consumption tracking and optimization',
+                    'Security system integration with cameras and alarms',
+                    'Weather-based automation adjustments',
+                    'Multi-user access control and permissions'
+                ],
+                images: [
+                    'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                ],
+                demoUrl: 'javascript:void(0)',
+                githubUrl: 'javascript:void(0)'
+            }
+            // Add more project data as needed
+        };
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterTags = document.querySelectorAll('.filter-tag');
+        const projectCards = document.querySelectorAll('.project-card');
+        const resultsCount = document.getElementById('results-count');
+        const resetFilters = document.getElementById('reset-filters');
+        const noResults = document.getElementById('no-results');
+
+        function updateResultsCount() {
+            const visibleCards = document.querySelectorAll('.project-card:not(.hidden)').length;
+            resultsCount.textContent = `Showing ${visibleCards} projects`;
+            
+            if (visibleCards === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function filterProjects(filterValue) {
+            let hasActiveFilter = filterValue !== 'all';
+            
+            projectCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    const tags = card.dataset.tags.split(' ');
+                    if (tags.includes(filterValue)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+
+            // Show/hide reset button
+            if (hasActiveFilter) {
+                resetFilters.classList.remove('hidden');
+            } else {
+                resetFilters.classList.add('hidden');
+            }
+
+            updateResultsCount();
+        }
+
+        // Filter tag click handlers
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // Remove active class from all tags
+                filterTags.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tag
+                tag.classList.add('active');
+                
+                const filterValue = tag.dataset.filter;
+                filterProjects(filterValue);
+            });
+        });
+
+        // Reset filters
+        resetFilters.addEventListener('click', () => {
+            filterTags.forEach(tag => tag.classList.remove('active'));
+            filterTags[0].classList.add('active'); // Activate "All Projects"
+            filterProjects('all');
+        });
+
+        // Search functionality
+        const searchInputs = [document.getElementById('search-input'), document.getElementById('mobile-search-input')];
+        
+        function searchProjects(searchTerm) {
+            const term = searchTerm.toLowerCase();
+            
+            projectCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const tags = card.dataset.tags.toLowerCase();
+                
+                if (title.includes(term) || description.includes(term) || tags.includes(term)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            
+            updateResultsCount();
+        }
+
+        searchInputs.forEach(input => {
+            if (input) {
+                input.addEventListener('input', (e) => {
+                    const searchTerm = e.target.value;
+                    if (searchTerm.length > 0) {
+                        // Reset filters when searching
+                        filterTags.forEach(tag => tag.classList.remove('active'));
+                        filterTags[0].classList.add('active');
+                        resetFilters.classList.add('hidden');
+                        
+                        searchProjects(searchTerm);
+                    } else {
+                        // Show all projects when search is cleared
+                        filterProjects('all');
+                    }
+                });
+            }
+        });
+
+        // Project modal functionality
+        const modal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+        const closeModal = document.getElementById('close-modal');
+        const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            
+            modalContent.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <div class="mb-6">
+                            <img src="${project.images[0]}" alt="${project.title}" class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            ${project.images.slice(1).map(img => `
+                                <img src="${img}" alt="${project.title}" class="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-smooth">
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-text-secondary mb-6">${project.description}</p>
+                        
+                        <h4 class="font-semibold text-primary mb-3">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            ${project.technologies.map(tech => `
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">${tech}</span>
+                            `).join('')}
+                        </div>
+                        
+                        <h4 class="font-semibold text-primary mb-3">Key Features</h4>
+                        <ul class="text-text-secondary space-y-2 mb-6">
+                            ${project.features.map(feature => `<li>• ${feature}</li>`).join('')}
+                        </ul>
+                        
+                        <div class="flex gap-4">
+                            <a href="${project.demoUrl}" class="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-smooth">
+                                Live Demo
+                            </a>
+                            <a href="${project.githubUrl}" class="border border-accent text-accent px-6 py-2 rounded-lg font-medium hover:bg-accent hover:text-white transition-smooth">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        viewDetailsButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const projectId = button.dataset.project;
+                openProjectModal(projectId);
+            });
+        });
+
+        closeModal.addEventListener('click', closeProjectModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeProjectModal();
+            }
+        });
+
+        // Lab section expandable content
+        const expandLabButtons = document.querySelectorAll('.expand-lab-btn');
+        
+        expandLabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const labId = button.dataset.lab;
+                const content = document.getElementById(`lab-${labId}`);
+                
+                if (content.classList.contains('expanded')) {
+                    content.classList.remove('expanded');
+                    button.textContent = 'Learn More →';
+                } else {
+                    // Close other expanded content
+                    document.querySelectorAll('.lab-content.expanded').forEach(el => {
+                        el.classList.remove('expanded');
+                    });
+                    document.querySelectorAll('.expand-lab-btn').forEach(btn => {
+                        btn.textContent = 'Learn More →';
+                    });
+                    
+                    content.classList.add('expanded');
+                    button.textContent = 'Show Less ←';
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Initialize results count
+        updateResultsCount();
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeProjectModal();
+            }
+        });
+
+        // CSS for filter tags
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-tag {
+                padding: 0.5rem 1rem;
+                background-color: #f8fafc;
+                color: #6b7280;
+                border: 1px solid #e5e7eb;
+                border-radius: 0.5rem;
+                font-size: 0.875rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                white-space: nowrap;
+            }
+            
+            .filter-tag:hover {
+                background-color: #3b82f6;
+                color: white;
+                border-color: #3b82f6;
+            }
+            
+            .filter-tag.active {
+                background-color: #3b82f6;
+                color: white;
+                border-color: #3b82f6;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About & Experience - Janarthanan</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjanarthana6832back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary font-inter">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                        <a href="projects_showcase.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Projects</a>
+                        <a href="technical_blog.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Blog</a>
+                        <a href="services_pricing.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Services</a>
+                        <a href="about_experience.html" class="nav-indicator active text-accent font-medium px-3 py-2 text-sm">About</a>
+                        <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="portfolio_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Home</a>
+                <a href="projects_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Projects</a>
+                <a href="technical_blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Blog</a>
+                <a href="services_pricing.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Services</a>
+                <a href="about_experience.html" class="block px-3 py-2 text-accent font-medium">About</a>
+                <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-16 pb-20 bg-gradient-to-br from-surface to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-fluid-4xl font-bold text-primary mb-6">
+                        My Journey in <span class="text-accent">Technology</span>
+                    </h1>
+                    <p class="text-fluid-lg text-text-secondary mb-8 max-w-2xl mx-auto lg:mx-0">
+                        From curious computer science student to seasoned full-stack developer, my path has been driven by passion for innovation, continuous learning, and creating meaningful digital solutions that impact lives.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="javascript:void(0)" onclick="downloadResume()" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                            Download Resume
+                        </a>
+                        <a href="contact_consultation.html" class="border border-accent text-accent px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-smooth">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 rounded-lg overflow-hidden shadow-large">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Janarthanan working on development projects" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-success text-white p-4 rounded-full shadow-medium">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline Section -->
+    <section id="timeline" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Professional Timeline</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Key milestones and achievements that shaped my career in technology and development.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-border hidden md:block"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex items-center justify-between md:justify-center">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                            <div class="bg-surface p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                                <div class="flex items-center justify-between md:justify-end mb-3">
+                                    <span class="text-sm text-accent font-medium">2024 - Present</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Senior Full-Stack Developer</h3>
+                                <p class="text-text-secondary mb-3">TechCorp Solutions</p>
+                                <p class="text-text-secondary text-sm">Leading development of enterprise SaaS platforms, mentoring junior developers, and architecting scalable solutions for Fortune 500 clients.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">Laravel</span>
+                                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">React</span>
+                                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-medium hidden md:block"></div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex items-center justify-between md:justify-center">
+                        <div class="md:w-1/2 md:pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-white shadow-medium hidden md:block"></div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="bg-surface p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm text-success font-medium">2022 - 2024</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">IoT Solutions Architect</h3>
+                                <p class="text-text-secondary mb-3">InnovateTech Labs</p>
+                                <p class="text-text-secondary text-sm">Designed and implemented IoT ecosystems for smart home automation, industrial monitoring, and healthcare applications with real-time data processing.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">Arduino</span>
+                                    <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">MQTT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex items-center justify-between md:justify-center">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                            <div class="bg-surface p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                                <div class="flex items-center justify-between md:justify-end mb-3">
+                                    <span class="text-sm text-warning font-medium">2020 - 2022</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Full-Stack Developer</h3>
+                                <p class="text-text-secondary mb-3">StartupHub Inc.</p>
+                                <p class="text-text-secondary text-sm">Built MVP applications for multiple startups, focusing on rapid prototyping, user experience optimization, and scalable architecture design.</p>
+                                <div class="flex flex-wrap gap-2 mt-4 md:justify-end">
+                                    <span class="px-3 py-1 bg-warning/10 text-warning text-xs rounded-full">Vue.js</span>
+                                    <span class="px-3 py-1 bg-warning/10 text-warning text-xs rounded-full">Node.js</span>
+                                    <span class="px-3 py-1 bg-warning/10 text-warning text-xs rounded-full">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-warning rounded-full border-4 border-white shadow-medium hidden md:block"></div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="relative flex items-center justify-between md:justify-center">
+                        <div class="md:w-1/2 md:pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-medium hidden md:block"></div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="bg-surface p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm text-primary font-medium">2018 - 2020</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Computer Science Graduate</h3>
+                                <p class="text-text-secondary mb-3">Tech University</p>
+                                <p class="text-text-secondary text-sm">Graduated with honors, specializing in software engineering and artificial intelligence. Led multiple academic projects and research initiatives.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Java</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Machine Learning</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Research</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Achievements Section -->
+    <section id="achievements" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Events & Achievements</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Speaking engagements, certifications, and recognition that highlight my expertise and community involvement.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Achievement 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">AWS Certified Solutions Architect</h3>
+                    <p class="text-text-secondary text-sm mb-3">Amazon Web Services • July 2024</p>
+                    <p class="text-text-secondary text-sm">Professional certification demonstrating expertise in designing distributed systems on AWS platform.</p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M7 4V2a1 1 0 011-1h4a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4zM9 6v8a1 1 0 102 0V6a1 1 0 10-2 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">TechConf 2024 Speaker</h3>
+                    <p class="text-text-secondary text-sm mb-3">International Tech Conference • June 2024</p>
+                    <p class="text-text-secondary text-sm">Keynote presentation on "Modern IoT Architecture Patterns" attended by 500+ developers.</p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Developer Excellence Award</h3>
+                    <p class="text-text-secondary text-sm mb-3">TechCorp Solutions • March 2024</p>
+                    <p class="text-text-secondary text-sm">Recognition for outstanding contribution to enterprise software development and team leadership.</p>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Open Source Contributor</h3>
+                    <p class="text-text-secondary text-sm mb-3">GitHub Community • Ongoing</p>
+                    <p class="text-text-secondary text-sm">Active contributor to Laravel, Vue.js, and IoT-related open source projects with 50+ merged PRs.</p>
+                </div>
+
+                <!-- Achievement 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Mentorship Program Lead</h3>
+                    <p class="text-text-secondary text-sm mb-3">DevCommunity • 2023 - Present</p>
+                    <p class="text-text-secondary text-sm">Leading mentorship program for junior developers, helping 20+ developers advance their careers.</p>
+                </div>
+
+                <!-- Achievement 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Innovation Hackathon Winner</h3>
+                    <p class="text-text-secondary text-sm mb-3">TechInnovate 2023 • November 2023</p>
+                    <p class="text-text-secondary text-sm">First place winner for developing an AI-powered IoT solution for smart agriculture monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Think Pad Section -->
+    <section id="think-pad" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Think Pad</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Innovative concepts, future projects, and creative ideas that drive my passion for technology and problem-solving.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Think Pad Item 1 -->
+                <div class="bg-surface rounded-lg overflow-hidden shadow-medium hover-elevate transition-elevation">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">AI-Powered Code Review Assistant</h3>
+                            <button class="think-pad-toggle text-accent hover:text-blue-600 transition-smooth" data-target="idea-1">
+                                <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-text-secondary mb-4">Developing an intelligent system that provides contextual code reviews and suggestions using machine learning algorithms.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">AI/ML</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">NLP</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">Python</span>
+                        </div>
+                        <div id="idea-1" class="disclosure-content">
+                            <div class="disclosure-inner pt-4 border-t border-border">
+                                <h4 class="font-semibold text-primary mb-3">Concept Details:</h4>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Automated detection of code smells and potential bugs</li>
+                                    <li>• Integration with popular IDEs and version control systems</li>
+                                    <li>• Learning from team coding patterns and best practices</li>
+                                    <li>• Real-time suggestions during development process</li>
+                                </ul>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-text-secondary">Status: Research Phase</span>
+                                    <span class="text-sm text-accent font-medium">Expected: Q4 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Think Pad Item 2 -->
+                <div class="bg-surface rounded-lg overflow-hidden shadow-medium hover-elevate transition-elevation">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Blockchain-Based IoT Security</h3>
+                            <button class="think-pad-toggle text-accent hover:text-blue-600 transition-smooth" data-target="idea-2">
+                                <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-text-secondary mb-4">Exploring decentralized security protocols for IoT devices using blockchain technology to ensure data integrity and device authentication.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Blockchain</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">IoT</span>
+                            <span class="px-3 py-1 bg-success/10 text-success text-sm rounded-full">Security</span>
+                        </div>
+                        <div id="idea-2" class="disclosure-content">
+                            <div class="disclosure-inner pt-4 border-t border-border">
+                                <h4 class="font-semibold text-primary mb-3">Concept Details:</h4>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Immutable device identity and authentication records</li>
+                                    <li>• Decentralized firmware update verification</li>
+                                    <li>• Smart contracts for automated security policies</li>
+                                    <li>• Cross-platform compatibility and scalability</li>
+                                </ul>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-text-secondary">Status: Prototype Development</span>
+                                    <span class="text-sm text-success font-medium">Expected: Q2 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Think Pad Item 3 -->
+                <div class="bg-surface rounded-lg overflow-hidden shadow-medium hover-elevate transition-elevation">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Micro-SaaS Development Platform</h3>
+                            <button class="think-pad-toggle text-accent hover:text-blue-600 transition-smooth" data-target="idea-3">
+                                <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-text-secondary mb-4">Building a no-code/low-code platform specifically designed for rapid micro-SaaS application development and deployment.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">SaaS</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">No-Code</span>
+                            <span class="px-3 py-1 bg-warning/10 text-warning text-sm rounded-full">Platform</span>
+                        </div>
+                        <div id="idea-3" class="disclosure-content">
+                            <div class="disclosure-inner pt-4 border-t border-border">
+                                <h4 class="font-semibold text-primary mb-3">Concept Details:</h4>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Drag-and-drop interface for rapid prototyping</li>
+                                    <li>• Built-in payment processing and user management</li>
+                                    <li>• Automated deployment and scaling capabilities</li>
+                                    <li>• Template marketplace for common SaaS patterns</li>
+                                </ul>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-text-secondary">Status: Concept Validation</span>
+                                    <span class="text-sm text-warning font-medium">Expected: Q1 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Think Pad Item 4 -->
+                <div class="bg-surface rounded-lg overflow-hidden shadow-medium hover-elevate transition-elevation">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-primary">Smart City Data Analytics</h3>
+                            <button class="think-pad-toggle text-accent hover:text-blue-600 transition-smooth" data-target="idea-4">
+                                <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-text-secondary mb-4">Comprehensive analytics platform for smart city infrastructure, integrating IoT sensors, traffic data, and citizen feedback for urban optimization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Smart City</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Analytics</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Big Data</span>
+                        </div>
+                        <div id="idea-4" class="disclosure-content">
+                            <div class="disclosure-inner pt-4 border-t border-border">
+                                <h4 class="font-semibold text-primary mb-3">Concept Details:</h4>
+                                <ul class="space-y-2 text-text-secondary text-sm mb-4">
+                                    <li>• Real-time traffic flow optimization algorithms</li>
+                                    <li>• Environmental monitoring and pollution tracking</li>
+                                    <li>• Predictive maintenance for city infrastructure</li>
+                                    <li>• Citizen engagement and feedback integration</li>
+                                </ul>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-text-secondary">Status: Research & Planning</span>
+                                    <span class="text-sm text-primary font-medium">Expected: Q3 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Deep Dive Section -->
+    <section id="skills-deep" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Technical Expertise</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Comprehensive breakdown of my technical skills, emerging technologies, and specialized knowledge areas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Core Technologies -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-6">Core Technologies</h3>
+                        <div class="space-y-4">
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">Full-Stack Development</span>
+                                    <span class="text-accent font-semibold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-accent h-2 rounded-full skill-bar" style="width: 95%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Laravel</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">React</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Vue.js</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Node.js</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">IoT & Hardware</span>
+                                    <span class="text-success font-semibold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-success h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Arduino</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Raspberry Pi</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">MQTT</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Sensors</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">Cloud & DevOps</span>
+                                    <span class="text-warning font-semibold">Proficient</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-warning h-2 rounded-full skill-bar" style="width: 82%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">AWS</span>
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">Docker</span>
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">CI/CD</span>
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">Kubernetes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emerging Technologies -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-6">Emerging Technologies</h3>
+                        <div class="space-y-4">
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">AI & Machine Learning</span>
+                                    <span class="text-primary font-semibold">Learning</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-primary h-2 rounded-full skill-bar" style="width: 65%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">TensorFlow</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Python ML</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">NLP</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Computer Vision</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">Blockchain Development</span>
+                                    <span class="text-accent font-semibold">Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-accent h-2 rounded-full skill-bar" style="width: 70%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Solidity</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Web3.js</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Smart Contracts</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">DeFi</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-medium text-text-primary">Mobile Development</span>
+                                    <span class="text-success font-semibold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                                    <div class="bg-success h-2 rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Flutter</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">React Native</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Dart</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Native APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Values Section -->
+    <section id="values" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Values & Interests</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    The principles that guide my work and the interests that fuel my passion for technology and innovation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Quality First</h3>
+                    <p class="text-text-secondary">Committed to delivering high-quality, maintainable code that stands the test of time and scales with business growth.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Continuous Learning</h3>
+                    <p class="text-text-secondary">Passionate about staying current with emerging technologies and sharing knowledge with the developer community.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Innovation Focus</h3>
+                    <p class="text-text-secondary">Always exploring new approaches and technologies to solve complex problems in creative and efficient ways.</p>
+                </div>
+
+                <!-- Interest 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Open Source</h3>
+                    <p class="text-text-secondary">Active contributor to open source projects, believing in the power of collaborative development and knowledge sharing.</p>
+                </div>
+
+                <!-- Interest 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Mentorship</h3>
+                    <p class="text-text-secondary">Passionate about helping junior developers grow their skills and advance their careers in technology.</p>
+                </div>
+
+                <!-- Interest 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-3">Sustainability</h3>
+                    <p class="text-text-secondary">Interested in developing technology solutions that contribute to environmental sustainability and social good.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources Section -->
+    <section id="resources" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-bold text-primary mb-4">Downloadable Resources</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Access my resume, technical cheat sheets, and other resources to learn more about my expertise and experience.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Professional Resume</h3>
+                    <p class="text-text-secondary text-sm mb-4">Comprehensive overview of my experience, skills, and achievements in PDF format.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 2.3 MB</span>
+                        <button onclick="downloadResource('resume')" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 002 2h8a2 2 0 002-2V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Laravel Cheat Sheet</h3>
+                    <p class="text-text-secondary text-sm mb-4">Quick reference guide for Laravel development with best practices and common patterns.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 1.8 MB</span>
+                        <button onclick="downloadResource('laravel-cheat')" class="bg-success text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">IoT Development Guide</h3>
+                    <p class="text-text-secondary text-sm mb-4">Comprehensive guide to IoT development including hardware setup and software integration.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 3.1 MB</span>
+                        <button onclick="downloadResource('iot-guide')" class="bg-warning text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-600 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">SaaS Architecture Patterns</h3>
+                    <p class="text-text-secondary text-sm mb-4">Design patterns and best practices for building scalable SaaS applications.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 2.7 MB</span>
+                        <button onclick="downloadResource('saas-patterns')" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Portfolio Case Studies</h3>
+                    <p class="text-text-secondary text-sm mb-4">Detailed case studies of selected projects with technical deep-dives and lessons learned.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 4.2 MB</span>
+                        <button onclick="downloadResource('case-studies')" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-medium hover-elevate transition-elevation">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Development Workflow</h3>
+                    <p class="text-text-secondary text-sm mb-4">My personal development workflow, tools, and productivity tips for efficient coding.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">PDF • 1.5 MB</span>
+                        <button onclick="downloadResource('workflow')" class="bg-success text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-smooth">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-fluid-3xl font-bold mb-6">Let's Build Something Amazing Together</h2>
+            <p class="text-fluid-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Ready to turn your ideas into reality? I'm here to help you create innovative solutions that make a difference.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_consultation.html" class="bg-accent text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-smooth hover-elevate">
+                    Start a Conversation
+                </a>
+                <a href="projects_showcase.html" class="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition-smooth">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">J</span>
+                        </div>
+                        <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Full-stack developer passionate about creating innovative solutions with modern technologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                        <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                        <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">janarthanan@example.com</li>
+                        <li class="text-text-secondary">+1 (555) 123-4567</li>
+                        <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-accent text-white p-3 rounded-full shadow-large hover:bg-blue-600 transition-smooth opacity-0 invisible">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Think Pad Toggle Functionality
+        document.querySelectorAll('.think-pad-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('svg');
+                
+                content.classList.toggle('expanded');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Skill Bar Animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1.5s ease-in-out';
+                            bar.style.width = width;
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.getElementById('skills-deep');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Download Functions
+        function downloadResume() {
+            // Simulate resume download
+            alert('Resume download would start here. Please contact me for the latest version.');
+        }
+
+        function downloadResource(resourceType) {
+            // Simulate resource download
+            const resourceNames = {
+                'resume': 'Professional Resume',
+                'laravel-cheat': 'Laravel Cheat Sheet',
+                'iot-guide': 'IoT Development Guide',
+                'saas-patterns': 'SaaS Architecture Patterns',
+                'case-studies': 'Portfolio Case Studies',
+                'workflow': 'Development Workflow'
+            };
+            
+            alert(`${resourceNames[resourceType]} download would start here. Please contact me for access.`);
+        }
+
+        // Navigation Active State
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-indicator');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lazy Loading for Images
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.src;
+                    img.classList.remove('skeleton');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

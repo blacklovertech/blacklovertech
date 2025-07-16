@@ -1,1 +1,0 @@
-$(".reflection").html($(".scene").html());
