@@ -36,13 +36,26 @@
                     </div>
                 </div>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                <!-- Theme Toggle and Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <svg class="theme-toggle-sun" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                        <svg class="theme-toggle-moon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
                         </svg>
                     </button>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,7 +103,7 @@
                 <div class="flex justify-center lg:justify-end">
                     <div class="relative">
                         <div class="w-80 h-80 rounded-full overflow-hidden shadow-large">
-                            <img src="/assets/jana.jpg?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Janarthanan - Full-Stack Developer" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Janarthanan - Full-Stack Developer" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                         </div>
                         <div class="absolute -bottom-4 -right-4 bg-accent text-white p-4 rounded-full shadow-medium">
                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
@@ -117,7 +130,7 @@
                 <!-- Project Card 1 -->
                 <div class="bg-white rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-Commerce Platform" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-Commerce Platform" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-primary mb-2">E-Commerce Platform</h3>
@@ -155,7 +168,7 @@
                 <!-- Project Card 3 -->
                 <div class="bg-white rounded-lg shadow-medium hover-elevate transition-elevation overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SaaS Analytics Dashboard" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SaaS Analytics Dashboard" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2016/04/04/14/12/monitor-1307227_1280.jpg'; this.onerror=null;" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-primary mb-2">SaaS Analytics Dashboard</h3>
@@ -349,63 +362,8 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Blog Post 1 -->
-                <article class="bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern JavaScript Frameworks" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg'; this.onerror=null;" />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-text-secondary mb-3">
-                            <span>July 12, 2025</span>
-                            <span class="mx-2">•</span>
-                            <span>5 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold text-primary mb-3">Modern JavaScript Frameworks: A Comprehensive Comparison</h3>
-                        <p class="text-text-secondary mb-4">Exploring the latest trends in JavaScript frameworks and their impact on modern web development...</p>
-                        <a href="technical_blog.html" class="text-accent font-medium hover:text-blue-600 transition-smooth">
-                            Read More →
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Blog Post 2 -->
-                <article class="bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IoT Security Best Practices" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg'; this.onerror=null;" />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-text-secondary mb-3">
-                            <span>July 8, 2025</span>
-                            <span class="mx-2">•</span>
-                            <span>7 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold text-primary mb-3">IoT Security Best Practices for 2025</h3>
-                        <p class="text-text-secondary mb-4">Essential security considerations when developing IoT applications and connected devices...</p>
-                        <a href="technical_blog.html" class="text-accent font-medium hover:text-blue-600 transition-smooth">
-                            Read More →
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Blog Post 3 -->
-                <article class="bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SaaS Architecture Patterns" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'; this.onerror=null;" />
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-text-secondary mb-3">
-                            <span>July 5, 2025</span>
-                            <span class="mx-2">•</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold text-primary mb-3">Scalable SaaS Architecture Patterns</h3>
-                        <p class="text-text-secondary mb-4">Building robust and scalable SaaS applications with modern architecture patterns and best practices...</p>
-                        <a href="technical_blog.html" class="text-accent font-medium hover:text-blue-600 transition-smooth">
-                            Read More →
-                        </a>
-                    </div>
-                </article>
+            <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog posts will be dynamically loaded here -->
             </div>
 
             <div class="text-center mt-12">
@@ -503,6 +461,10 @@
         </svg>
     </button>
 
+    <!-- Load JavaScript files -->
+    <script src="../js/theme-manager.js"></script>
+    <script src="../js/blog-manager.js"></script>
+    <script src="../js/contact-manager.js"></script>
     <script>
         // Typewriter Effect
         const typewriterText = document.getElementById('typewriter-text');
@@ -538,6 +500,34 @@
 
         // Start typewriter effect
         typeWriter();
+
+        // Load blog posts dynamically
+        function loadBlogPosts() {
+            const container = document.getElementById('blog-posts-container');
+            if (container && window.blogManager) {
+                const posts = window.blogManager.blogPosts.slice(0, 3); // Get first 3 posts
+                
+                container.innerHTML = posts.map(post => `
+                    <article class="bg-surface rounded-lg overflow-hidden hover-elevate transition-elevation">
+                        <div class="h-48 overflow-hidden">
+                            <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-text-secondary mb-3">
+                                <span>${new Date(post.date).toLocaleDateString()}</span>
+                                <span class="mx-2">•</span>
+                                <span>${post.readTime}</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">${post.title}</h3>
+                            <p class="text-text-secondary mb-4">${post.excerpt}</p>
+                            <a href="technical_blog.html" class="text-accent font-medium hover:text-blue-600 transition-smooth">
+                                Read More →
+                            </a>
+                        </div>
+                    </article>
+                `).join('');
+            }
+        }
 
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -657,7 +647,11 @@
         images.forEach(img => {
             imageObserver.observe(img);
         });
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(loadBlogPosts, 100); // Small delay to ensure blog manager is loaded
+        });
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>

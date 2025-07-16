@@ -1,0 +1,111 @@
+[
+    {
+        "id": "featured-js-frameworks",
+        "title": "Modern JavaScript Frameworks: A Comprehensive Comparison",
+        "excerpt": "Exploring the latest trends in JavaScript frameworks and their impact on modern web development. This comprehensive guide covers React, Vue, Angular, and emerging frameworks with practical examples and performance comparisons.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">JavaScript frameworks have revolutionized web development, offering developers powerful tools to build complex applications efficiently. In this comprehensive guide, we'll explore the most popular frameworks and their unique strengths.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">React: The Component King</h3><p class=\"text-text-secondary mb-4\">React's component-based architecture has made it the go-to choice for many developers. Its virtual DOM and extensive ecosystem provide unmatched flexibility.</p><div class=\"bg-surface p-4 rounded-lg mb-6\"><pre class=\"text-sm\"><code class=\"language-javascript\">function Welcome(props) {\n  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;\n}\n\nconst element = &lt;Welcome name=\"Sara\" /&gt;;</code></pre></div><h3 class=\"text-xl font-semibold text-primary mb-4\">Vue.js: The Progressive Framework</h3><p class=\"text-text-secondary mb-4\">Vue.js offers a gentle learning curve while maintaining powerful features. Its template syntax and reactive data binding make it developer-friendly.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Angular: The Full-Featured Platform</h3><p class=\"text-text-secondary mb-4\">Angular provides a complete solution with TypeScript integration, dependency injection, and a powerful CLI for enterprise applications.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Performance Comparison</h3><p class=\"text-text-secondary mb-4\">When choosing a framework, performance is crucial. Here's how they stack up in real-world scenarios...</p></div>",
+        "category": "web-development",
+        "tags": [
+            "javascript",
+            "react",
+            "vue",
+            "angular",
+            "frameworks"
+        ],
+        "date": "2025-07-12",
+        "readTime": "8 min read",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": true,
+        "author": "Janarthanan"
+    },
+    {
+        "id": "iot-security-2025",
+        "title": "IoT Security Best Practices for 2025",
+        "excerpt": "Essential security considerations when developing IoT applications and connected devices. Learn about encryption, authentication, and secure communication protocols.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">As IoT devices become more prevalent, security concerns have reached critical levels. This guide covers essential security practices for IoT development.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Device Authentication</h3><p class=\"text-text-secondary mb-4\">Implementing robust authentication mechanisms is the first line of defense against unauthorized access.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Encryption Protocols</h3><p class=\"text-text-secondary mb-4\">End-to-end encryption ensures data integrity throughout the communication pipeline.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Regular Updates</h3><p class=\"text-text-secondary mb-4\">Maintaining up-to-date firmware and security patches is crucial for long-term security.</p></div>",
+        "category": "iot",
+        "tags": [
+            "iot",
+            "security",
+            "encryption",
+            "authentication"
+        ],
+        "date": "2025-07-08",
+        "readTime": "7 min read",
+        "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "author": "Janarthanan"
+    },
+    {
+        "id": "saas-architecture-patterns",
+        "title": "Scalable SaaS Architecture Patterns",
+        "excerpt": "Building robust and scalable SaaS applications with modern architecture patterns and best practices. Multi-tenancy, microservices, and deployment strategies.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">Building scalable SaaS applications requires careful architectural planning and implementation of proven patterns.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Multi-Tenancy Strategies</h3><p class=\"text-text-secondary mb-4\">Choosing the right multi-tenancy approach is crucial for SaaS success.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Microservices Architecture</h3><p class=\"text-text-secondary mb-4\">Breaking down monolithic applications into manageable microservices.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Deployment and Scaling</h3><p class=\"text-text-secondary mb-4\">Modern deployment strategies for SaaS applications.</p></div>",
+        "category": "saas",
+        "tags": [
+            "saas",
+            "architecture",
+            "scalability",
+            "microservices"
+        ],
+        "date": "2025-07-05",
+        "readTime": "6 min read",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "author": "Janarthanan"
+    },
+    {
+        "id": "laravel-performance-optimization",
+        "title": "Laravel Performance Optimization Techniques",
+        "excerpt": "Advanced techniques for optimizing Laravel applications including caching strategies, database optimization, and performance monitoring tools.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">Laravel applications can be optimized significantly with the right techniques and tools.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Caching Strategies</h3><p class=\"text-text-secondary mb-4\">Implementing effective caching at multiple levels.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Database Optimization</h3><p class=\"text-text-secondary mb-4\">Query optimization and database indexing strategies.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Performance Monitoring</h3><p class=\"text-text-secondary mb-4\">Tools and techniques for monitoring Laravel application performance.</p></div>",
+        "category": "web-development",
+        "tags": [
+            "laravel",
+            "performance",
+            "optimization",
+            "caching"
+        ],
+        "date": "2025-07-02",
+        "readTime": "9 min read",
+        "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "author": "Janarthanan"
+    },
+    {
+        "id": "flutter-state-management-guide",
+        "title": "Flutter State Management: Complete Guide",
+        "excerpt": "Comprehensive tutorial on Flutter state management patterns including Provider, Bloc, Riverpod, and GetX with practical examples.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">State management is crucial for building maintainable Flutter applications.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Provider Pattern</h3><p class=\"text-text-secondary mb-4\">The most popular state management solution for Flutter.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Bloc Pattern</h3><p class=\"text-text-secondary mb-4\">Business Logic Component pattern for complex applications.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Riverpod and GetX</h3><p class=\"text-text-secondary mb-4\">Modern alternatives for state management in Flutter.</p></div>",
+        "category": "tutorials",
+        "tags": [
+            "flutter",
+            "state-management",
+            "provider",
+            "bloc"
+        ],
+        "date": "2025-06-28",
+        "readTime": "12 min read",
+        "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "author": "Janarthanan"
+    },
+    {
+        "id": "restful-api-design-best-practices",
+        "title": "RESTful API Design Best Practices",
+        "excerpt": "Essential guidelines for designing robust, scalable, and maintainable RESTful APIs with proper authentication, versioning, and documentation.",
+        "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-text-secondary mb-6\">Well-designed APIs are the backbone of modern applications.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">API Design Principles</h3><p class=\"text-text-secondary mb-4\">Core principles for designing effective RESTful APIs.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Authentication and Security</h3><p class=\"text-text-secondary mb-4\">Implementing secure authentication and authorization.</p><h3 class=\"text-xl font-semibold text-primary mb-4\">Versioning and Documentation</h3><p class=\"text-text-secondary mb-4\">Best practices for API versioning and comprehensive documentation.</p></div>",
+        "category": "web-development",
+        "tags": [
+            "api",
+            "rest",
+            "design",
+            "authentication"
+        ],
+        "date": "2025-06-25",
+        "readTime": "8 min read",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "author": "Janarthanan"
+    }
+]
