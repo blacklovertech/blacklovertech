@@ -1,14 +1,194 @@
-<h1>Refund Policy</h1>
-<p>At BlackLoverTech, we strive for customer satisfaction. This policy outlines our refund procedures.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cancellation & Refund Policy</title>
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0 10px;
+        color: #333;
+    }
+    .container {
+        max-width: 900px;
+        margin: 100px auto 20px; /* top margin for fixed nav */
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .last-updated {
+        text-align: center;
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 25px;
+    }
+    .section {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .section-header {
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .section-header:hover {
+        background: #e0e0e0;
+    }
+    .section-content {
+        display: block; /* always visible */
+        padding: 10px 15px;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    ul {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body class="bg-background text-text-primary font-inter">
 
-<h2>Refund Eligibility</h2>
-<p>Refunds are applicable only for services purchased through our official website.</p>
+<!-- Navigation Header -->
+<nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">J</span>
+                    </div>
+                    <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                </a>
+            </div>
 
-<h2>Requesting a Refund</h2>
-<p>To request a refund, email us at <a href="mailto:contact@blacklovertech.in">contact@blacklovertech.in</a> with purchase details.</p>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                    <a href="projects_showcase.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Projects</a>
+                    <a href="technical_blog.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Blog</a>
+                    <a href="services_pricing.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Services</a>
+                    <a href="about_experience.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">About</a>
+                    <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                </div>
+            </div>
 
-<h2>Processing Time</h2>
-<p>Refunds are processed within 7–14 business days after approval.</p>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
-<h2>Exceptions</h2>
-<p>Refunds will not be provided for completed services or digital products once delivered.</p>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="portfolio_homepage.html" class="block px-3 py-2 text-accent font-medium">Home</a>
+            <a href="projects_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Projects</a>
+            <a href="technical_blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Blog</a>
+            <a href="services_pricing.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Services</a>
+            <a href="about_experience.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">About</a>
+            <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <h1>Cancellation & Refund Policy</h1>
+    <div class="last-updated"><strong>Last updated on:</strong> 20-03-2025 18:55:12</div>
+
+    <div class="section">
+        <div class="section-header">Policy Details</div>
+        <div class="section-content">
+            <p>JANARTHANAN SUBANANTHAM believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy:</p>
+            <ul>
+                <li>Cancellations will be considered only if the request is made immediately after placing the order. Requests may not be entertained if the order has already been communicated to vendors/merchants or shipping has begun.</li>
+                <li>No cancellation requests are accepted for perishable items like flowers or eatables. Refund/replacement may be provided if the quality of the product is not satisfactory.</li>
+                <li>Damaged or defective items must be reported to Customer Service within 7 days of receipt. The request will be verified with the merchant before action is taken.</li>
+                <li>If the product received is not as shown or does not meet expectations, report to Customer Service within 7 days. Appropriate action will be taken after review.</li>
+                <li>For products with manufacturer warranties, complaints should be referred to the manufacturer. Refunds approved by JANARTHANAN SUBANANTHAM will take 6-8 days to process.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">J</span>
+                    </div>
+                    <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                </div>
+                <p class="text-text-secondary mb-6 max-w-md">
+                    Full-stack developer passionate about creating innovative solutions with modern technologies.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                    <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                    <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                    <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                <ul class="space-y-2">
+                    <li class="text-text-secondary">janarthanan@example.com</li>
+                    <li class="text-text-secondary">+1 (555) 123-4567</li>
+                    <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Policies</h3>
+                <ul class="space-y-2">
+                    <li><a href="terms-and-conditions.html" class="text-text-secondary hover:text-accent transition-smooth">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html" class="text-text-secondary hover:text-accent transition-smooth">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html" class="text-text-secondary hover:text-accent transition-smooth">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-border mt-8 pt-8 text-center">
+            <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
