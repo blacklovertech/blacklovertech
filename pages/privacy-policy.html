@@ -1,20 +1,272 @@
-<h1>Privacy Policy</h1>
-<p>BlackLoverTech is committed to protecting your privacy. This policy explains how we handle your personal information.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0 10px;
+        color: #333;
+    }
+    .container {
+        max-width: 900px;
+        margin: 100px auto 20px; /* top margin for fixed nav */
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .last-updated {
+        text-align: center;
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 25px;
+    }
+    .section {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .section-header {
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .section-header:hover {
+        background: #e0e0e0;
+    }
+    .section-content {
+        display: none;
+        padding: 10px 15px;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    ul {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body class="bg-background text-text-primary font-inter">
 
-<h2>Information Collection</h2>
-<p>We may collect personal details like name, email, phone number, and payment information when you use our services.</p>
+<!-- Navigation Header -->
+<nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="portfolio_homepage.html" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">J</span>
+                    </div>
+                    <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                </a>
+            </div>
 
-<h2>Use of Information</h2>
-<p>Information collected is used to improve our services, process payments, and communicate with users.</p>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="portfolio_homepage.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Home</a>
+                    <a href="projects_showcase.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Projects</a>
+                    <a href="technical_blog.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Blog</a>
+                    <a href="services_pricing.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">Services</a>
+                    <a href="about_experience.html" class="nav-indicator text-text-secondary hover:text-accent transition-smooth px-3 py-2 text-sm">About</a>
+                    <a href="contact_consultation.html" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-smooth">Contact</a>
+                </div>
+            </div>
 
-<h2>Data Security</h2>
-<p>We implement reasonable security measures to protect your data.</p>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
-<h2>Third-Party Sharing</h2>
-<p>We do not share your personal information with third parties without consent, except for payment processing.</p>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="portfolio_homepage.html" class="block px-3 py-2 text-accent font-medium">Home</a>
+            <a href="projects_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Projects</a>
+            <a href="technical_blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Blog</a>
+            <a href="services_pricing.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">Services</a>
+            <a href="about_experience.html" class="block px-3 py-2 text-text-secondary hover:text-accent transition-smooth">About</a>
+            <a href="contact_consultation.html" class="block px-3 py-2 bg-accent text-white rounded-lg mx-3 mt-2 text-center">Contact</a>
+        </div>
+    </div>
+</nav>
 
-<h2>Cookies</h2>
-<p>Our website uses cookies to enhance user experience. You can disable cookies in your browser settings.</p>
+<!-- Page Content -->
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated"><strong>Last updated on:</strong> 20-03-2025 18:55:12</div>
 
-<h2>Contact Us</h2>
-<p>For privacy-related queries, contact <a href="mailto:contact@blacklovertech.in">contact@blacklovertech.in</a>.</p>
+    <div class="section">
+        <div class="section-header">Introduction</div>
+        <div class="section-content">
+            <p>We at <strong>JANARTHANAN SUBANANTHAM</strong> ("we", "us", or "our") are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Information We Collect</div>
+        <div class="section-content">
+            <ul>
+                <li>Personal Information: Name, email, phone number, address, and payment details provided by you while using our services.</li>
+                <li>Usage Data: Information about how you interact with our website, including pages visited, time spent, and actions taken.</li>
+                <li>Cookies and Tracking Technologies: Used to enhance user experience, analyze trends, and administer the site.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">How We Use Your Information</div>
+        <div class="section-content">
+            <ul>
+                <li>To provide, maintain, and improve our services.</li>
+                <li>To process transactions and send updates, confirmations, and notifications.</li>
+                <li>To respond to your inquiries, questions, and support requests.</li>
+                <li>To comply with legal obligations and enforce our terms.</li>
+                <li>To send marketing and promotional communications (with your consent where required by law).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Disclosure of Your Information</div>
+        <div class="section-content">
+            <p>We do not sell or rent your personal information. We may share information with:</p>
+            <ul>
+                <li>Service providers and vendors who perform services on our behalf.</li>
+                <li>Legal authorities if required by law or to protect our rights.</li>
+                <li>In connection with business transfers such as mergers or acquisitions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Data Security</div>
+        <div class="section-content">
+            <p>We implement appropriate technical and organizational measures to safeguard your data against unauthorized access, disclosure, alteration, or destruction. However, no transmission of data over the internet can be guaranteed as completely secure.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Your Rights</div>
+        <div class="section-content">
+            <ul>
+                <li>You may request access to, correction, or deletion of your personal information.</li>
+                <li>You may opt-out of receiving marketing communications at any time.</li>
+                <li>You may lodge a complaint with the relevant data protection authority if your rights are violated.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Governing Law & Jurisdiction</div>
+        <div class="section-content">
+            <p>This Privacy Policy shall be governed by and construed in accordance with the laws of India. All disputes arising out of or in connection with this Privacy Policy shall be subject to the exclusive jurisdiction of the courts in Melur Madurai, Tamil Nadu.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Contact</div>
+        <div class="section-content">
+            <p>If you have any questions or concerns regarding this Privacy Policy, you may contact us at <strong>janarthanan@example.com</strong>.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">J</span>
+                    </div>
+                    <span class="font-semibold text-lg text-primary">Janarthanan</span>
+                </div>
+                <p class="text-text-secondary mb-6 max-w-md">
+                    Full-stack developer passionate about creating innovative solutions with modern technologies.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="portfolio_homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a></li>
+                    <li><a href="projects_showcase.html" class="text-text-secondary hover:text-accent transition-smooth">Projects</a></li>
+                    <li><a href="services_pricing.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a></li>
+                    <li><a href="about_experience.html" class="text-text-secondary hover:text-accent transition-smooth">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Contact</h3>
+                <ul class="space-y-2">
+                    <li class="text-text-secondary">janarthanan@example.com</li>
+                    <li class="text-text-secondary">+1 (555) 123-4567</li>
+                    <li><a href="contact_consultation.html" class="text-accent hover:text-blue-600 transition-smooth">Get in Touch</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div>
+                <h3 class="font-semibold text-primary mb-4">Policies</h3>
+                <ul class="space-y-2">
+                    <li><a href="terms-and-conditions.html" class="text-text-secondary hover:text-accent transition-smooth">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html" class="text-text-secondary hover:text-accent transition-smooth">Privacy Policy</a></li>
+                    <li><a href="refund-policy.html" class="text-text-secondary hover:text-accent transition-smooth">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-border mt-8 pt-8 text-center">
+            <p class="text-text-secondary">© 2025 Janarthanan. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const headers = document.querySelectorAll('.section-header');
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
